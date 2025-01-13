@@ -6,7 +6,6 @@ import AboutPage from "../pages/aboutus/AboutPage";
 import ArticlePage from "../pages/ArticlePage/ArticlePage";
 import PortfolioPage from "../pages/portfoliopage/PortfolioPage";
 import ContactPage from "../pages/contactpage/ContactPage";
-import App from "../pages/homepages/App";
 
 
 const Router = createBrowserRouter([
@@ -38,10 +37,6 @@ const Router = createBrowserRouter([
         path: "/contact",
         element: <ContactPage />
       },
-      {
-        path: "/app",
-        element: <App />
-      }
     ],
   },
 ]);

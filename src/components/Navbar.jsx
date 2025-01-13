@@ -1,7 +1,7 @@
 import { Menu } from "antd";
-import Logo from "../assets/logo.png";
 import { SiMinutemailer } from "react-icons/si";
 import { Link } from "react-router-dom";
+import Logo from "../assets/logo.png"
 
 const Navbar = () => {
   return (
