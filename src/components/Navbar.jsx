@@ -2,7 +2,6 @@ import { Menu } from "antd";
 import { SiMinutemailer } from "react-icons/si";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.png"
-
 const Navbar = () => {
   return (
     <div className="flex items-center px-6 md:px-12 py-4 shadow-lg fixed top-0 z-10 bg-opacity-100 bg-transparent w-full bg-white">
