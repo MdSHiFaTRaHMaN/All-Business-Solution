@@ -1,14 +1,13 @@
 import { Menu } from "antd";
 import { SiMinutemailer } from "react-icons/si";
 import { Link } from "react-router-dom";
-import Logo from "../../src/assets/logo.png"
 const Navbar = () => {
   return (
     <div className="flex items-center px-6 md:px-12 py-4 shadow-lg fixed top-0 z-10 bg-opacity-100 bg-transparent w-full bg-white">
       {/* Logo Section */}
       <div className="flex items-center space-x-3">
-        <Link to="/">
-          <img src={Logo} alt="Logo" className="w-20 h-auto" />
+        <Link to="/" className="text-2xl font-bold">
+        All Business Soluition
         </Link>
       </div>
 
