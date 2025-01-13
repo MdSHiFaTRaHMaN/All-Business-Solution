@@ -6,6 +6,7 @@ import AboutPage from "../pages/aboutus/AboutPage";
 import ArticlePage from "../pages/ArticlePage/ArticlePage";
 import PortfolioPage from "../pages/portfoliopage/PortfolioPage";
 import ContactPage from "../pages/contactpage/ContactPage";
+import Ecommerce from "../pages/Services/eCommerce/Ecommerce";
 
 
 const Router = createBrowserRouter([
@@ -37,6 +38,10 @@ const Router = createBrowserRouter([
         path: "/contact",
         element: <ContactPage />
       },
+      {
+        path: "/eCommerce-service",
+        element: <Ecommerce />
+      }
     ],
   },
 ]);

@@ -7,7 +7,7 @@ const Navbar = () => {
       {/* Logo Section */}
       <div className="flex items-center space-x-3">
         <Link to="/" className="text-2xl font-bold">
-        All Business Soluition
+          All Business Soluition
         </Link>
       </div>
 
@@ -25,7 +25,10 @@ const Navbar = () => {
           className="hover:text-blue-600 text-rose-800"
           popupClassName="custom-submenu"
         >
-          <div className="grid grid-cols-2 gap-x-4 gap-y-2 p-4">
+          <div className="grid grid-cols-2">
+            <Menu.Item key="ecommerce">
+              <Link to="/eCommerce-service"> E-Commerce Solutions</Link>
+            </Menu.Item>
             <Menu.Item key="web">Web Development</Menu.Item>
             <Menu.Item key="mobile">Mobile Apps</Menu.Item>
             <Menu.Item key="uiux">UI/UX Design</Menu.Item>
@@ -33,7 +36,6 @@ const Navbar = () => {
             <Menu.Item key="cloud">Cloud Solutions</Menu.Item>
             <Menu.Item key="data">Data Analysis</Menu.Item>
             <Menu.Item key="cybersecurity">Cybersecurity</Menu.Item>
-            <Menu.Item key="ecommerce">E-Commerce Solutions</Menu.Item>
           </div>
         </Menu.SubMenu>
         <Menu.Item key="portfolio" className="hover:text-blue-600">
