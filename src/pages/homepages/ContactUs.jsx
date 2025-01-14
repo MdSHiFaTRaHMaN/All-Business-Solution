@@ -87,15 +87,15 @@ const ContactUs = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-4">
               <PhoneOutlined className="text-xl" />
-              <span>+880 1784-222255</span>
+              <span>+880 1724-683220</span>
             </div>
             <div className="flex items-center space-x-4">
               <MailOutlined className="text-xl" />
-              <span>eomsbd@gmail.com</span>
+              <span>abs@gmail.com</span>
             </div>
             <div className="flex items-center space-x-4">
               <HomeOutlined className="text-xl" />
-              <span>Ta-90/4, Link Road, Middle Badda, Gulshan-1, Dhaka.</span>
+              <span>Manda, Dhaka in Bangladesh.</span>
             </div>
           </div>
 

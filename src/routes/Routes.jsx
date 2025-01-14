@@ -7,7 +7,7 @@ import ArticlePage from "../pages/ArticlePage/ArticlePage";
 import PortfolioPage from "../pages/portfoliopage/PortfolioPage";
 import ContactPage from "../pages/contactpage/ContactPage";
 import Ecommerce from "../pages/Services/eCommerce/Ecommerce";
-
+import WebdevPage from "../pages/webdevelopment/WebdevPage"
 
 const Router = createBrowserRouter([
   {
@@ -41,6 +41,10 @@ const Router = createBrowserRouter([
       {
         path: "/eCommerce-service",
         element: <Ecommerce />
+      },
+      {
+        path: "/webdev-service",
+        element: <WebdevPage />
       }
     ],
   },

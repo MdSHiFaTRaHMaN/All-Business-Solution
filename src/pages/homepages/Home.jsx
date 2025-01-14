@@ -54,7 +54,7 @@ const Home = () => {
         <div className="fixed bottom-[105px] right-5 bg-white w-80 h-96 shadow-lg rounded-lg flex flex-col">
           {/* Header */}
           <div className="bg-green-500 text-white p-3 flex justify-between items-center rounded-t-lg">
-            <h3 className="font-bold">We're happy to chat.</h3>
+            <h3 className="font-bold">We are happy to chat.</h3>
             <span className="cursor-pointer text-xl" onClick={toggleChat}>
               &times;
             </span>

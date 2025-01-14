@@ -1,92 +1,103 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { Card } from "antd";
+import {
+  FaTruck,
+  FaPaintBrush,
+  FaSearchDollar,
+  FaSchool,
+  FaMobileAlt,
+  FaServer,
+  FaShoppingCart,
+  FaCode,
+  FaGlobe,
+} from "react-icons/fa";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 const services = [
   {
+    icon: <FaTruck size={40} className="text-blue-500" />,
+    title: "Courier Management Software",
+    description: "Find the best courier management software near you!",
+  },
+  {
+    icon: <FaPaintBrush size={40} className="text-blue-500" />,
+    title: "Graphic Design",
+    description:
+      "Workspace Infotech has a solid experience in delivering Graphic/Web design services.",
+  },
+  {
+    icon: <FaSearchDollar size={40} className="text-blue-500" />,
+    title: "SEO & SMS Marketing",
+    description:
+      "SEO is the process of affecting the visibility of a website or a web page in a web search.",
+  },
+  {
+    icon: <FaSchool size={40} className="text-blue-500" />,
+    title: "School Management",
+    description: "School Management",
+  },
+  {
+    icon: <FaMobileAlt size={40} className="text-blue-500" />,
+    title: "Mobile Applications Developments",
+    description:
+      "In our Web Applications all mobile apps are developed to deliver content.",
+  },
+  {
+    icon: <FaServer size={40} className="text-blue-500" />,
+    title: "Domain & Hosting",
+    description:
+      "Find Best 2020 Web Hosting providers using price comparisons, reviews, specials.",
+  },
+  {
+    icon: <FaShoppingCart size={40} className="text-blue-500" />,
+    title: "Ecommerce Solutions",
+    description:
+      "E-commerce (EC) is the buying and selling of goods and services.",
+  },
+  {
+    icon: <FaCode size={40} className="text-blue-500" />,
     title: "Software Development",
     description:
-      "Custom Software Development Solutions to drive your digital success. Unlock new possibilities for your business with Technobd Limited's expert software consulting and development services.",
-    icon: "🛠️",
+      "We offer a completely bespoke business software design service.",
   },
   {
-    title: "Development Outsourcing Services",
+    icon: <FaGlobe size={40} className="text-blue-500" />,
+    title: "Web Technology",
     description:
-      "Get your software developed by experienced professionals. With over 22 years of experience and a team of 50+ experts, Technobd Limited offers top-quality software development outsourcing services to businesses of all sizes and across various industries.",
-    icon: "✈️",
-  },
-  {
-    title: "Custom Software Development",
-    description:
-      "Tailored to your business requirements. With over 22 years of experience and expertise in delivering custom software development solutions for businesses across 12+ industries, Technobd Limited can provide you with powerful and reliable software solutions that cater to your specific needs.",
-    icon: "💻",
-  },
-  {
-    title: "Legacy Software Modernization",
-    description:
-      "Tailored to your business requirements. With over 22 years of experience and expertise in delivering custom software development solutions, Technobd Limited can provide you with powerful and reliable software solutions that cater to your specific needs.",
-    icon: "♻️",
-  },
-  {
-    title: "Software Product Development",
-    description:
-      "At Technobd Limited, we are dedicated to helping businesses create marketable software products that are tailored to their specific needs. Our end-to-end outsourced product development services are designed to help you design, architect, and deliver user-friendly software products of the highest quality.",
-    icon: "📦",
-  },
-  {
-    title: "Web Development Service",
-    description:
-      "Technobd Limited provides high-quality development such as web design and development, database design & integration, programming, website maintenance, e-commerce solutions, and application program development.",
-    icon: "🌐",
+      "We offer unique services in web development ushered from its long technical history.",
   },
 ];
 
-const Services = () => {
+const ServicesGrid = () => {
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      offset: 100, 
-      easing: "ease-in-out",
-      once: false, 
-    });
+    AOS.init({ duration: 1000 });
   }, []);
 
   return (
-    <div className="bg-gray-100 py-10">
-      <div className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-green-600 text-c">
-          THE THINGS <br /> WE ARE ABLE TO DO
-        </h1>
-        <p className="text-lg text-gray-600 mt-2">
-          Since 2001, over 700 companies have worked with Technobd Limited.
-        </p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 lg:px-20">
+    <div className="min-h-screen bg-gray-100 py-10">
+      <p className="text-yellow-800 text-center">OUR SERVICES</p>
+      <h2 className="text-3xl font-bold text-center mb-10">
+        THE THINGS WE ARE ABLE TO DO
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-5 md:px-20">
         {services.map((service, index) => (
-          <div
+          <Card
             key={index}
-            data-aos="fade-up" // Animation type
-            data-aos-delay={`${index * 100}`} // Delay for staggered animations
+            data-aos="fade-up"
+            hoverable
+            className="shadow-lg rounded-lg"
           >
-            <Card
-              className="hover:shadow-lg transition-shadow duration-300"
-              title={
-                <div className="flex items-center gap-4">
-                  <span className="text-3xl bg-green-100 p-2 rounded-full">
-                    {service.icon}
-                  </span>
-                  <h3 className="text-xl font-semibold">{service.title}</h3>
-                </div>
-              }
-            >
-              <p className="text-gray-600 h-[120px]">{service.description}</p>
-            </Card>
-          </div>
+            <div className="flex flex-col items-center text-center p-5">
+              {service.icon}
+              <h3 className="mt-4 text-lg font-semibold">{service.title}</h3>
+              <p className="mt-2 text-gray-600">{service.description}</p>
+            </div>
+          </Card>
         ))}
       </div>
     </div>
   );
 };
 
-export default Services;
+export default ServicesGrid;
