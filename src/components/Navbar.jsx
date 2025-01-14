@@ -29,9 +29,15 @@ const Navbar = () => {
             <Menu.Item key="ecommerce">
               <Link to="/eCommerce-service"> E-Commerce Solutions</Link>
             </Menu.Item>
-            <Menu.Item key="web"><Link to="/webdev-service"> Web Development</Link></Menu.Item>
-            <Menu.Item key="mobile">App Development</Menu.Item>
-            <Menu.Item key="uiux">UI/UX Design</Menu.Item>
+            <Menu.Item key="web">
+              <Link to="/webdev-service"> Web Development</Link>
+            </Menu.Item>
+            <Menu.Item key="mobile">
+              <Link to="/appdev-services">App Development</Link>
+            </Menu.Item>
+            <Menu.Item key="uiux">
+              <Link to="/ui-ux-services">UI/UX Design</Link>
+            </Menu.Item>
           </div>
         </Menu.SubMenu>
         <Menu.Item key="portfolio" className="hover:text-blue-600">

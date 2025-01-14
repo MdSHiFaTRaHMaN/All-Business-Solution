@@ -2,7 +2,7 @@
 const Footer = () => {
   return (
     <footer className="bg-[#110940] text-white body-font">
-      <div className="container px-5 py-16 mx-auto flex flex-wrap items-center justify-between">
+      <div className="container px-5 py-7 mx-auto flex flex-wrap items-center justify-between">
         {/* Brand Section */}
         <div className="flex items-center mb-4 sm:mb-0">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">

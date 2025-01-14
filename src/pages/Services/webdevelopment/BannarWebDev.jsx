@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Bannar from "../../assets/webdevlopment.jpg";
+import Bannar from "../../../assets/webdevlopment.jpg";
 import { Link } from "react-router-dom";
 
 const BannarWebDev = () => {
@@ -11,7 +11,7 @@ const BannarWebDev = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[50vh] lg:h-[70vh]">
+    <div className="relative w-full h-[50vh] lg:h-screen">
       <img
         src={Bannar}
         alt="Blog Banner"

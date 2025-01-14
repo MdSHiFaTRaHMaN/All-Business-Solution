@@ -7,7 +7,9 @@ import ArticlePage from "../pages/ArticlePage/ArticlePage";
 import PortfolioPage from "../pages/portfoliopage/PortfolioPage";
 import ContactPage from "../pages/contactpage/ContactPage";
 import Ecommerce from "../pages/Services/eCommerce/Ecommerce";
-import WebdevPage from "../pages/webdevelopment/WebdevPage"
+import WebdevPage from "../pages/Services/webdevelopment/WebdevPage";
+import AppDevPage from "../pages/Services/appdevpage/AppDevPage";
+import UiServicesPage from "../pages/Services/uiservicespage/UiServicesPage";
 
 const Router = createBrowserRouter([
   {
@@ -45,6 +47,14 @@ const Router = createBrowserRouter([
       {
         path: "/webdev-service",
         element: <WebdevPage />
+      },
+      {
+        path: "/appdev-services",
+        element: <AppDevPage />
+      },
+      {
+        path: "/ui-ux-services",
+        element : <UiServicesPage />
       }
     ],
   },

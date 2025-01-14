@@ -6,7 +6,6 @@ import OurProject from "./OurProject";
 import Services from "./Services";
 import WhyChoose from "./WhyChoose";
 import OurClient from "./OurClient";
-import ContactUs from "./ContactUs";
 import LastProduct from "./LastProduct";
 
 const Home = () => {
@@ -39,7 +38,6 @@ const Home = () => {
       <WhyChoose />
       <OurClient />
       <LastProduct />
-      <ContactUs />
       {/* Message Icon */}
       <div
         className="m-7 flex justify-end fixed bottom-3 right-2 cursor-pointer"
