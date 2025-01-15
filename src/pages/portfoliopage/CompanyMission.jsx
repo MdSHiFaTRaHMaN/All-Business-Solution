@@ -15,13 +15,13 @@ const CompanyMission = () => {
       {/* OUR VISION */}
       <div className="flex flex-col md:flex-row items-center justify-center max-w-7xl mx-auto gap-8">
         <img
-          data-aos="fade-right"
+          data-aos="fade-up"
           src={Mission}
           alt="Our Vision"
           className="w-full md:w-1/2 lg:w-[40%] object-cover rounded-lg transition-transform transform hover:scale-105"
         />
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           className="flex flex-col items-start text-center md:text-left md:w-1/2"
         >
           <FaLightbulb size={50} className="text-green-500 mb-4 animate-pulse" />
@@ -37,7 +37,7 @@ const CompanyMission = () => {
       {/* OUR MISSION */}
       <div className="flex flex-col-reverse md:flex-row items-center justify-center max-w-7xl mx-auto gap-8 mt-16">
         <div
-          data-aos="fade-right"
+          data-aos="fade-up"
           className="flex flex-col items-start text-center md:text-left md:w-1/2"
         >
           <FaBullseye size={50} className="text-blue-500 mb-4 animate-bounce" />
@@ -49,7 +49,7 @@ const CompanyMission = () => {
           </p>
         </div>
         <img
-          data-aos="fade-left"
+          data-aos="fade-up"
           src={Missionrun}
           alt="Our Mission"
           className="w-full md:w-1/2 lg:w-[40%] object-cover rounded-lg transition-transform transform hover:scale-105"
