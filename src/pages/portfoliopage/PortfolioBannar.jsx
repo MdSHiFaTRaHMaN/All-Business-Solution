@@ -1,29 +1,39 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Bannar from "../../assets/portfolio.png";
+import Bannar from "../../assets/portfoliobannarr.jpg";
+import { Link } from "react-router-dom";
 
 const PortfolioBannar = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 1000, once: false });
   }, []);
 
   return (
-    <div
-      className="relative h-screen flex items-center justify-center bg-gray-100"
-      data-aos="fade-in"
-    >
-      {/* Background Image */}
+    <div className="relative w-full h-[50vh] lg:h-[100vh]">
       <img
         src={Bannar}
-        alt="Portfolio Banner"
-        className="absolute top-0 left-0 w-full h-full object-cover opacity-80"
+        alt="Blog Banner"
+        className="object-cover w-full h-full"
+        data-aos="fade-up"
       />
-
-      {/* Overlay Gradient */}
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black via-transparent to-black opacity-70"></div>
+      <div
+        className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50"
+        data-aos="fade-in"
+        data-aos-delay="500"
+      >
+        <h1 className="text-4xl lg:text-5xl font-bold text-white mb-3">
+          Portfolio
+        </h1>
+        <p className=" text-gray-300 text-center px-4 lg:px-0">
+          <div className="text-white">
+            <Link to="/">Home</Link> / <Link to="/portfolio">Portfolio</Link>
+          </div>
+        </p>
+      </div>
     </div>
   );
 };
 
 export default PortfolioBannar;
+

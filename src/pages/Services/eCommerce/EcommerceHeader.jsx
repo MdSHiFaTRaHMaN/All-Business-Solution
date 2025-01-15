@@ -28,7 +28,7 @@ const EcommerceHeader = () => {
         <p className=" text-gray-300 text-center px-4 lg:px-0">
           <div className="text-white">
             <Link to="/">Home</Link> /{" "}
-            <Link to="/Article">eCommerce Services</Link>
+            <Link to="/eCommerce-service">eCommerce Services</Link>
           </div>
         </p>
       </div>
