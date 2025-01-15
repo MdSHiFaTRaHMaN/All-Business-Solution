@@ -3,11 +3,11 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { RouterProvider } from "react-router-dom";
 import Routes from "./routes/Routes";
-// import AnimatedCursor from "react-animated-cursor";
+import AnimatedCursor from "react-animated-cursor";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-{/* <AnimatedCursor
+<AnimatedCursor
   innerSize={10}
   outerSize={25}
   color="255, 215, 0" // Golden Color (RGB for Gold)
@@ -26,7 +26,7 @@ createRoot(document.getElementById("root")).render(
     border: "1px solid rgba(255, 255, 255, 0.8)",
     boxShadow: "0 0 4px rgba(255, 215, 0, 0.8)",
   }}
-/> */}
+/>
 
 
     <RouterProvider router={Routes} />
