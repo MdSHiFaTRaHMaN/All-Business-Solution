@@ -79,14 +79,18 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </Menu.Item>
             <Menu.SubMenu key="services-mobile" title="Services+">
-              <Menu.Item key="web-mobile">Web Development</Menu.Item>
-              <Menu.Item key="mobile-mobile">Mobile Apps</Menu.Item>
-              <Menu.Item key="uiux-mobile">UI/UX Design</Menu.Item>
-              <Menu.Item key="seo-mobile">SEO Optimization</Menu.Item>
-              <Menu.Item key="cloud-mobile">Cloud Solutions</Menu.Item>
-              <Menu.Item key="data-mobile">Data Analysis</Menu.Item>
-              <Menu.Item key="cybersecurity-mobile">Cybersecurity</Menu.Item>
-              <Menu.Item key="ecommerce-mobile">E-Commerce Solutions</Menu.Item>
+              <Menu.Item key="ecommerce">
+                <Link to="/eCommerce-service"> E-Commerce Solutions</Link>
+              </Menu.Item>
+              <Menu.Item key="web">
+                <Link to="/webdev-service"> Web Development</Link>
+              </Menu.Item>
+              <Menu.Item key="mobile">
+                <Link to="/appdev-services">App Development</Link>
+              </Menu.Item>
+              <Menu.Item key="uiux">
+                <Link to="/ui-ux-services">UI/UX Design</Link>
+              </Menu.Item>
             </Menu.SubMenu>
             <Menu.Item key="portfolio-mobile">
               <Link to="/portfolio">Portfolio</Link>
