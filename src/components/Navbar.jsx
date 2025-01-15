@@ -27,7 +27,11 @@ const Navbar = () => {
         <Menu.Item key="home" className="hover:text-blue-600">
           <Link to="/">Home</Link>
         </Menu.Item>
-        <Menu.SubMenu key="services" title="Services+" className="hover:text-blue-600">
+        <Menu.SubMenu
+          key="services"
+          title="Services+"
+          className="hover:text-blue-600"
+        >
           <Menu.Item key="ecommerce">
             <Link to="/eCommerce-service">E-Commerce Solutions</Link>
           </Menu.Item>
@@ -73,11 +77,19 @@ const Navbar = () => {
       <Drawer
         title={
           <div className="flex items-center justify-between">
-            <Link to="/" onClick={closeDrawer} className="flex items-center space-x-2 text-xl font-bold">
+            <Link
+              to="/"
+              onClick={closeDrawer}
+              className="flex items-center space-x-2 text-xl font-bold"
+            >
               <img src={AbsLogo} alt="Logo" width={40} />
               <span>ABS</span>
             </Link>
-            <Button type="text" onClick={closeDrawer} icon={<AiOutlineClose />} />
+            <Button
+              type="text"
+              onClick={closeDrawer}
+              icon={<AiOutlineClose />}
+            />
           </div>
         }
         placement="right"
@@ -87,33 +99,55 @@ const Navbar = () => {
       >
         <Menu mode="vertical" className="text-gray-700 font-medium">
           <Menu.Item key="home-mobile">
-            <Link to="/" onClick={closeDrawer}>Home</Link>
+            <Link to="/" onClick={closeDrawer}>
+              Home
+            </Link>
           </Menu.Item>
-          <Menu.SubMenu key="services-mobile" title="Services+">
+          <Menu.SubMenu
+            key="services-mobile"
+            title="Services+"
+            popupClassName="mobile-submenu"
+          >
             <Menu.Item key="ecommerce">
-              <Link to="/eCommerce-service" onClick={closeDrawer}>E-Commerce Solutions</Link>
+              <Link to="/eCommerce-service" onClick={closeDrawer}>
+                E-Commerce Solutions
+              </Link>
             </Menu.Item>
             <Menu.Item key="web">
-              <Link to="/webdev-service" onClick={closeDrawer}>Web Development</Link>
+              <Link to="/webdev-service" onClick={closeDrawer}>
+                Web Development
+              </Link>
             </Menu.Item>
             <Menu.Item key="mobile">
-              <Link to="/appdev-services" onClick={closeDrawer}>App Development</Link>
+              <Link to="/appdev-services" onClick={closeDrawer}>
+                App Development
+              </Link>
             </Menu.Item>
             <Menu.Item key="uiux">
-              <Link to="/ui-ux-services" onClick={closeDrawer}>UI/UX Design</Link>
+              <Link to="/ui-ux-services" onClick={closeDrawer}>
+                UI/UX Design
+              </Link>
             </Menu.Item>
           </Menu.SubMenu>
           <Menu.Item key="portfolio-mobile">
-            <Link to="/portfolio" onClick={closeDrawer}>Portfolio</Link>
+            <Link to="/portfolio" onClick={closeDrawer}>
+              Portfolio
+            </Link>
           </Menu.Item>
           <Menu.Item key="aboutus-mobile">
-            <Link to="/about-us" onClick={closeDrawer}>About Us</Link>
+            <Link to="/about-us" onClick={closeDrawer}>
+              About Us
+            </Link>
           </Menu.Item>
           <Menu.Item key="article-mobile">
-            <Link to="/article" onClick={closeDrawer}>Article</Link>
+            <Link to="/article" onClick={closeDrawer}>
+              Article
+            </Link>
           </Menu.Item>
           <Menu.Item key="contact-mobile">
-            <Link to="/contact" onClick={closeDrawer}>Contact Us</Link>
+            <Link to="/contact" onClick={closeDrawer}>
+              Contact Us
+            </Link>
           </Menu.Item>
         </Menu>
       </Drawer>
