@@ -49,7 +49,7 @@ const WhyChoose = () => {
   }, []);
   return (
     <div className=" flex items-center justify-center p-8">
-      <div className="bg-white rounded-xl p-10 max-w-6xl">
+      <div className="bg-white rounded-xl p-2 lg:p-10 max-w-6xl">
         {/* Header Section */}
         <div data-aos="fade-up" className="text-center">
           <h1 className="text-4xl font-bold text-green-700 mb-4">

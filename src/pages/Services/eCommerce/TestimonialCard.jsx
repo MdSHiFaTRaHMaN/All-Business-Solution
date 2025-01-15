@@ -59,7 +59,7 @@ const Testimonials = () => {
             Our Client's Comment
           </h2>
         </div>
-        <div className="flex justify-center -mx-4">
+        <div className="flex flex-wrap justify-center -mx-4">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard
               key={index}

@@ -3,7 +3,7 @@ import WebIMG from "../../../assets/webdevbannar.png";
 
 const AboutWebDev = () => {
   return (
-    <div className="w-full lg:w-9/12 mx-auto">
+    <div className="w-full lg:w-9/12 mx-auto px-5">
       <h1 className="text-center text-4xl font-semibold text-[#AF986F]">
         Web Development Agency or Company
       </h1>

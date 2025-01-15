@@ -25,9 +25,9 @@ const OurClient = () => {
     }, []);
 
   return (
-    <div className="py-16 px-4 md:px-8 bg-white flex">
+    <div className="py-16 px-4 md:px-8 bg-white grid lg:flex">
       {/* Heading Section */}
-      <div className="text-center mb-12 w-2/5">
+      <div className="text-center mb-12 w-full lg:w-2/5">
         <div
           className="flex items-center gap-2 mb-2"
           data-aos="fade-up"

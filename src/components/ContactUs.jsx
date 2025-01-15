@@ -21,7 +21,7 @@ const ContactUs = () => {
     <div className="bg-[#110940] text-white py-14 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Form Section */}
-        <div data-aos="fade-right">
+        <div data-aos="fade-up">
           <h2 className="text-4xl font-bold mb-6">Contact Us</h2>
           <Form layout="vertical" className="space-y-4">
             <Form.Item
@@ -82,7 +82,7 @@ const ContactUs = () => {
         </div>
 
         {/* Contact Info Section */}
-        <div data-aos="fade-left" className="space-y-6">
+        <div data-aos="fade-down" className="space-y-6">
           <h2 className="text-4xl font-bold">Get in Touch</h2>
           <div className="space-y-4">
             <div className="flex items-center space-x-4">

@@ -13,7 +13,7 @@ const MobileResponsive = () => {
         {/* Left Section: Mobile Image */}
         <div
           className="w-full lg:w-1/2 flex justify-center mb-8 lg:mb-0"
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-duration="1000"
         >
           <div className="w-full max-w-md">
@@ -24,7 +24,7 @@ const MobileResponsive = () => {
         {/* Right Section: Text Content */}
         <div
           className="w-full lg:w-1/2 text-center lg:text-left px-6"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-duration="1000"
         >
           <h2 className="text-3xl font-bold text-gray-800 mb-4">

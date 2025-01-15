@@ -13,7 +13,7 @@ const AboutWork = () => {
 
   return (
     <div className="w-full lg:w-10/12 mx-auto my-7">
-      <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
+      <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4 px-4">
         <div
           className="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-[#AF986F]"
           data-aos="fade-up"

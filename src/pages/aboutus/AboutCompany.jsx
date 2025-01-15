@@ -1,6 +1,6 @@
 const AboutCompany = () => {
   return (
-    <div className="w-full lg:w-10/12 mx-auto py-5">
+    <div className="w-full lg:w-10/12 mx-auto p-5">
       <div className="text-center">
         <span className="text-sm text-yellow-700">KNOW US BETTER</span>
         <h1 className="text-3xl font-semibold">About Us</h1>
@@ -12,10 +12,10 @@ const AboutCompany = () => {
           we offer a comprehensive range of managed ICT enabled services.
           Whether you’re looking for professional custom software development,
           desktop/web development, mobile app development or software testing
-          services you've found the right company and that is EOMS bd.
+          services you've found the right company and that is ABS bd.
         </p>
         <p>
-          At EOMS bd, we have always put our client first. This idea permeates
+          At ABS bd, we have always put our client first. This idea permeates
           our culture to its core. It has driven us to create the innovative
           products and services we offer today. As a result, we enable our
           clients to put their people first-helping them build the
@@ -36,7 +36,7 @@ const AboutCompany = () => {
           great lasting relationships.
         </p>
       </div>
-      <div className="flex gap-7 justify-center my-7">
+      <div className="flex flex-wrap gap-7 justify-center my-7">
         <div className="flex">
           <span>+</span>
           <h1 className="text-5xl text-yellow-800">05</h1>

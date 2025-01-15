@@ -30,7 +30,7 @@ const Features = () => {
   ];
 
   return (
-    <div className="flex justify-center gap-6 px-4 py-12 bg-gray-100">
+    <div className="flex flex-wrap justify-center gap-6 px-4 py-12 bg-gray-100">
       {features.map((feature, index) => (
         <div
           key={index}

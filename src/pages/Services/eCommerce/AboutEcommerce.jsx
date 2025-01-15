@@ -14,7 +14,7 @@ const AboutEcommerce = () => {
 
   return (
     <div>
-      <div className="container flex flex-col px-16 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
+      <div className="container flex flex-col px-5 lg:px-16 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
         <div className="w-full lg:w-1/2" data-aos="fade-up">
           <div className="lg:max-w-lg">
             <h1 className="text-3xl font-semibold tracking-wide text-gray-800  lg:text-4xl">
@@ -43,7 +43,7 @@ const AboutEcommerce = () => {
 
         <div
           className="flex items-center justify-center w-full h-96 lg:w-1/2"
-          data-aos="fade-left"
+          data-aos="fade-up"
         >
           <img
             className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl"

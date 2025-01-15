@@ -9,70 +9,58 @@ const CreativeWork = () => {
     AOS.init({ duration: 1000, once: false });
   }, []);
 
+  const works = [
+    {
+      icon: <FaLaptopCode className="text-5xl sm:text-6xl text-yellow-800" />,
+      title: "Interface Design",
+      description: "Implementation and rollout of new network infrastructure, including consolidation.",
+      delay: 100,
+    },
+    {
+      icon: <FaRegLightbulb className="text-5xl sm:text-6xl text-yellow-800" />,
+      title: "Creative Always",
+      description: "Innovative solutions with user-centric design and functionality.",
+      delay: 200,
+    },
+    {
+      icon: <TbSignature className="text-5xl sm:text-6xl text-yellow-800" />,
+      title: "Real-time Editing",
+      description: "Collaborative editing with real-time updates for better workflow.",
+      delay: 300,
+    },
+  ];
+
   return (
-    <section className="bg-white w-full lg:w-8/12 mx-auto">
-      <div className="container px-6 py-10 mx-auto">
-        {/* Section Header */}
-        <div data-aos="fade-up">
-          <p className="text-yellow-800 text-center">Awesome Works</p>
-          <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl">
-            Our Creative Works.
-          </h1>
-        </div>
+    <section className="bg-white py-10 px-4 md:px-10">
+      {/* Section Header */}
+      <div data-aos="fade-up" className="text-center mb-10">
+        <p className="text-yellow-800 uppercase tracking-wide">Awesome Works</p>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800">
+          Our Creative Works
+        </h1>
+      </div>
 
-        {/* Creative Works Section */}
-        <div
-          className="flex justify-center gap-7 mt-8"
-          data-aos="fade-up"
-        >
-          {/* Work Item 1 */}
+      {/* Creative Works Grid */}
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto"
+        data-aos="fade-up"
+      >
+        {works.map((work, index) => (
           <div
-            className="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-[#AF986F]"
+            key={index}
+            className="flex flex-col items-center p-6 sm:p-8 bg-white border border-gray-200 shadow-md rounded-xl hover:bg-yellow-800 hover:text-white transition-colors duration-300"
             data-aos="zoom-in"
-            data-aos-delay="100"
+            data-aos-delay={work.delay}
           >
-            <FaLaptopCode className="text-7xl" />
-            <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize group-hover:text-white">
-              Interface Design
-            </h1>
-            <p className="mt-2 text-gray-500 capitalize group-hover:text-white text-center">
-              Implementation and rollout of new network infrastructure,
-              including consolidation.
+            {work.icon}
+            <h2 className="mt-4 text-xl sm:text-2xl font-semibold">
+              {work.title}
+            </h2>
+            <p className="mt-2 text-gray-600 group-hover:text-white text-center text-sm sm:text-base">
+              {work.description}
             </p>
           </div>
-
-          {/* Work Item 2 */}
-          <div
-            className="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-[#AF986F]"
-            data-aos="zoom-in"
-            data-aos-delay="200"
-          >
-            <FaRegLightbulb className="text-7xl" />
-            <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize group-hover:text-white">
-              Creative Always
-            </h1>
-            <p className="mt-2 text-gray-500 capitalize group-hover:text-white text-center">
-              Implementation and rollout of new network infrastructure,
-              including consolidation.
-            </p>
-          </div>
-
-          {/* Work Item 3 */}
-          <div
-            className="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-[#AF986F]"
-            data-aos="zoom-in"
-            data-aos-delay="300"
-          >
-            <TbSignature className="text-7xl" />
-            <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize group-hover:text-white">
-              Real-time Editing
-            </h1>
-            <p className="mt-2 text-gray-500 capitalize group-hover:text-white text-center">
-              Implementation and rollout of new network infrastructure,
-              including consolidation.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

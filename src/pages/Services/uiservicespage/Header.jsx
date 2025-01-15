@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Bannar from "../../../assets/uidesign.png";
+import Bannar from "../../../assets/ui-uxImage.jpg";
 import { Link } from "react-router-dom";
 
 const Header = () => {

@@ -1,15 +1,15 @@
 import { useEffect } from "react";
-import { Tabs } from "antd"; // Ant Design Tabs
+import { Tabs } from "antd";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "antd/dist/reset.css"; // Ant Design styles
-import ProjectIMG1 from "../../assets/article.png"
-import ProjectIMG2 from "../../assets/article1.jpg"
-import ProjectIMG3 from "../../assets/article2.jpg"
+import "antd/dist/reset.css";
+import ProjectIMG1 from "../../assets/article.png";
+import ProjectIMG2 from "../../assets/article1.jpg";
+import ProjectIMG3 from "../../assets/article2.jpg";
 
 const OurProject = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: false });
+    AOS.init({ duration: 1000, once: true });
   }, []);
 
   const allProjects = [
@@ -18,7 +18,7 @@ const OurProject = () => {
       title: "Alan",
       description:
         "ALAN boasts a powerful SMS Management System ensuring that messages are delivered promptly and reliably.",
-      image: ProjectIMG1, // Replace with your actual image
+      image: ProjectIMG1,
       category: "WEB",
     },
     {
@@ -26,7 +26,7 @@ const OurProject = () => {
       title: "Prestige Labs",
       description:
         "PrestigeLabs includes an automated tax submission system, freeing up your time to focus on growing your business.",
-      image: ProjectIMG2, // Replace with your actual image
+      image: ProjectIMG2,
       category: "WEB",
     },
     {
@@ -34,7 +34,7 @@ const OurProject = () => {
       title: "Mobile App Project",
       description:
         "A cutting-edge mobile application designed to streamline task management on the go.",
-      image: ProjectIMG3, // Replace with your actual image
+      image: ProjectIMG3,
       category: "MOBILE APP",
     },
   ];
@@ -63,15 +63,25 @@ const OurProject = () => {
   ];
 
   return (
-    <section className="bg-white py-10">
+    <section className="bg-white py-12 px-4 md:px-8 lg:px-20">
       {/* Header */}
-      <div className="text-center mb-10">
-        <h1 className="text-3xl font-semibold text-gray-800">Our Portfolio</h1>
+      <div className="text-center mb-12" data-aos="fade-down">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800">
+          Our Portfolio
+        </h1>
+        <p className="mt-3 text-gray-600 text-sm sm:text-base">
+          Explore our recent projects across web and mobile platforms.
+        </p>
       </div>
 
-      {/* Ant Design Tabs */}
-      <div className="container mx-auto px-5 lg:px-0">
-        <Tabs defaultActiveKey="ALL" centered items={tabItems} />
+      {/* Tabs */}
+      <div className="max-w-7xl mx-auto">
+        <Tabs
+          defaultActiveKey="ALL"
+          centered
+          items={tabItems}
+          animated={{ inkBar: true, tabPane: true }}
+        />
       </div>
     </section>
   );
@@ -79,29 +89,31 @@ const OurProject = () => {
 
 const ProjectGrid = ({ projects }) => {
   return (
-    <div className="grid md:grid-cols-2 gap-6 w-10/12 mx-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {projects.map((project, index) => (
         <div
           key={project.id}
-          className="flex flex-col lg:flex-row items-center bg-gray-50 shadow-lg rounded-lg p-3 hover:shadow-2xl transition duration-300"
+          className="bg-gray-50 shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
           data-aos="fade-up"
           data-aos-delay={`${index * 200}`}
         >
           {/* Image */}
-          <div className="w-full lg:w-1/2">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="rounded-lg w-full object-cover"
-            />
-          </div>
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-48 sm:h-56 object-cover"
+          />
 
           {/* Content */}
-          <div className="mt-5 lg:mt-0 lg:ml-6 lg:w-1/2">
-            <h2 className="text-2xl font-bold text-gray-800">{project.title}</h2>
-            <p className="mt-3 text-gray-600">{project.description}</p>
+          <div className="p-5">
+            <h2 className="text-xl font-semibold text-gray-800">
+              {project.title}
+            </h2>
+            <p className="mt-2 text-gray-600 text-sm">
+              {project.description}
+            </p>
             <div className="mt-4">
-              <span className="text-sm px-3 py-1 bg-gray-200 text-gray-700 rounded-full">
+              <span className="inline-block px-3 py-1 bg-blue-100 text-blue-600 text-xs font-medium rounded-full">
                 {project.category}
               </span>
             </div>

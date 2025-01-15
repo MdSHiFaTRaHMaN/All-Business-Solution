@@ -1,6 +1,6 @@
 const OurMission = () => {
   return (
-    <div className="w-full lg:w-10/12 mx-auto py-5">
+    <div className="w-full lg:w-10/12 mx-auto p-5">
       <div className="text-center">
         <span className="text-sm text-yellow-700">GOAL OF COMPANY</span>
         <h1 className="text-3xl font-semibold">OUR MISSION</h1>

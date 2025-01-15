@@ -12,19 +12,19 @@ const PaymentGateway = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-center py-10 bg-white mx-auto">
+    <div className="flex flex-wrap items-center justify-center py-10 px-4 bg-white mx-auto">
       <div>
-        <h1 className="text-4xl font-bold mb-4">
+        <h1 className="text-4xl font-bold mb-4 text-center">
           INTEGRATED <span className="text-blue-400">PAYMENT GATEWAY</span>
         </h1>
-        <hr className="w-16 border-b-2 border-blue-400 mb-6" />
-        <p className="text-gray-600 max-w-3xl mb-8">
+        <hr className="w-16 border-b-2 border-blue-400 mb-6 mx-auto" />
+        <p className="text-gray-600 max-w-3xl mb-8 text-center">
           Payment Gateway enabled you to accept Credit card payments on your
           website. We have worked with various payment gateways including
           Paypal, Pay forte, Paytabs, Network Solutions, Cash on Delivery, etc.
           We have even handled tokenized payments for subscription payments.
         </p>
-        <div className="flex gap-6" data-aos="fade-up">
+        <div className="flex flex-wrap gap-2 lg:gap-6" data-aos="fade-up">
           <Card className="flex items-center justify-center p-4 shadow-md hover:shadow-xl">
             <FaPaypal size={32} className="text-blue-600 mr-2" />
             <span className="text-lg font-medium">PayPal</span>
@@ -43,7 +43,7 @@ const PaymentGateway = () => {
           </Card>
         </div>
       </div>
-      <div data-aos="fade-left" className="mt-10">
+      <div data-aos="fade-up" className="mt-10">
         <img src={Payment} alt="Payment Illustration" className="w-96" />
       </div>
     </div>

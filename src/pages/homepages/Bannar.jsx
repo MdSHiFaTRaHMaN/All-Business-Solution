@@ -1,4 +1,4 @@
-import { Carousel } from "antd";
+import { Button, Carousel } from "antd";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
@@ -9,185 +9,95 @@ import Bannar4 from "../../assets/bannarimage05.jpg";
 import Bannar5 from "../../assets/bannarimage1.jpg";
 import Bannar6 from "../../assets/bannarimage3.jpg";
 import Bannar7 from "../../assets/bannarimage2.jpg";
+
 const Bannar = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in ms
-      easing: "ease-in-out", // Easing function
-      once: false, // Whether animation should happen only once
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false,
     });
   }, []);
+
+  const slides = [
+    {
+      image: Bannar1,
+      title: "Small Business Account Software",
+      description:
+        "E office Management System Provide Expert Accounting Software",
+    },
+    {
+      image: Bannar2,
+      title: "Small Business Website Design",
+      description:
+        "To all Small Business, We Provide Website Design & Development Service",
+    },
+    {
+      image: Bannar3,
+      title: "Web Development Agency",
+      description:
+        "Develop your web Application with Best Web Development Agency\nE office Management System",
+    },
+    {
+      image: Bannar4,
+      title: "Customer eCommerce Website Development",
+      description:
+        "E office Management System Provide Best eCommerce Website Design Service",
+    },
+    {
+      image: Bannar5,
+      title: "Digital Marketing Support",
+      description:
+        "We will do Marketing & Remarketing with Paid and Free Tools",
+    },
+    {
+      image: Bannar6,
+      title: "School Management Software",
+      description:
+        "Manage Your student-teacher, Online Class Accounts From One Software",
+    },
+    {
+      image: Bannar7,
+      title: "Small Business Accounts Software",
+      description:
+        "E office Management System Provide Expert Accounting Software",
+    },
+  ];
 
   return (
     <div className="text-black flex items-center justify-center">
       <div className="w-full h-screen">
-        <Carousel autoplay className="h-full">
-          {/* cart 1 */}
-          <header className="">
-            <div
-              className="w-full bg-center bg-cover h-screen"
-              style={{
-                backgroundImage: `url(${Bannar1})`,
-              }}
-            >
-              <div className="flex items-center pl-28 w-full h-full bg-gray-900/40">
-                <div className="">
-                  <h1 className="text-4xl font-semibold text-white lg:text-4xl font-mono">
-                    Small Business Account Software
-                  </h1>
-                  <p className="text-white font-semibold text-base">
-                    E office Management System Provide Expert Accounting
-                    Software
-                  </p>
-                  <button className="w-full px-7 py-4 mt-4 text-sm font-medium text-white capitalize transition-colors border duration-700 transform rounded hover:bg-white hover:text-black lg:w-auto">
-                    CHECKOUT NOW
-                  </button>
+        <Carousel autoplay effect="fade" dots>
+          {slides.map((slide, index) => (
+            <header key={index}>
+              <div
+                className="w-full bg-center bg-cover h-screen relative"
+                style={{
+                  backgroundImage: `url(${slide.image})`,
+                }}
+              >
+                <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                  <div
+                    data-aos="fade-up"
+                    className="text-center px-4 md:px-10 lg:px-28"
+                  >
+                    <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white font-mono leading-tight">
+                      {slide.title}
+                    </h1>
+                    <p className="text-white text-sm sm:text-base md:text-lg font-medium mt-4">
+                      {slide.description}
+                    </p>
+                    <Button
+                      variant="outlined"
+                      className="font-semibold text-lg text-white p-6 bg-transparent"
+                    >
+                      CHECKOUT NOW
+                    </Button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </header>
-          {/* cart 2  */}
-          <header className="">
-            <div
-              className="w-full bg-center bg-cover h-screen"
-              style={{
-                backgroundImage: `url(${Bannar2})`,
-              }}
-            >
-              <div className="flex items-center pl-28 w-full h-full bg-gray-900/40">
-                <div className="">
-                  <h1 className="text-4xl font-semibold text-white lg:text-4xl font-mono">
-                    Small Business Website Design
-                  </h1>
-                  <p className="text-white font-semibold text-base">
-                    To all Small Business, We Provide Website Design &
-                    Development Service
-                  </p>
-                  <button className="w-full px-7 py-4 mt-4 text-sm font-medium text-white capitalize transition-colors border duration-700 transform rounded hover:bg-white hover:text-black lg:w-auto">
-                    CHECKOUT NOW
-                  </button>
-                </div>
-              </div>
-            </div>
-          </header>
-          {/* cart 3  */}
-          <header className="">
-            <div
-              className="w-full bg-center bg-cover h-screen"
-              style={{
-                backgroundImage: `url(${Bannar3})`,
-              }}
-            >
-              <div className="flex items-center pl-28 w-full h-full bg-gray-900/40">
-                <div className="">
-                  <h1 className="text-4xl font-semibold text-white lg:text-4xl font-mono">
-                    Web Devlopment Agency
-                  </h1>
-                  <p className="text-white font-semibold text-base">
-                    Develop your web Application with Best Web Development
-                    Agency
-                    <br />E office Management System
-                  </p>
-                  <button className="w-full px-7 py-4 mt-4 text-sm font-medium text-white capitalize transition-colors border duration-700 transform rounded hover:bg-white hover:text-black lg:w-auto">
-                    CHECKOUT NOW
-                  </button>
-                </div>
-              </div>
-            </div>
-          </header>
-          {/* cart 4  */}
-          <header className="">
-            <div
-              className="w-full bg-center bg-cover h-screen"
-              style={{
-                backgroundImage: `url(${Bannar4})`,
-              }}
-            >
-              <div className="flex items-center pl-28 w-full h-full bg-gray-900/40">
-                <div className="">
-                  <h1 className="text-4xl font-semibold text-white lg:text-4xl font-mono">
-                    Customer eCommerce Website <br /> Devlopment
-                  </h1>
-                  <p className="text-white font-semibold text-base">
-                    E office Management System Provide Best eCommerce Website
-                    Design Service
-                  </p>
-                  <button className="w-full px-7 py-4 mt-4 text-sm font-medium text-white capitalize transition-colors border duration-700 transform rounded hover:bg-white hover:text-black lg:w-auto">
-                    CHECKOUT NOW
-                  </button>
-                </div>
-              </div>
-            </div>
-          </header>
-          {/* cart 5  */}
-          <header className="">
-            <div
-              className="w-full bg-center bg-cover h-screen"
-              style={{
-                backgroundImage: `url(${Bannar5})`,
-              }}
-            >
-              <div className="flex items-center pl-28 w-full h-full bg-gray-900/40">
-                <div className="">
-                  <h1 className="text-4xl font-semibold text-white lg:text-4xl font-mono">
-                    Digital Marketing Support
-                  </h1>
-                  <p className="text-white font-semibold text-base">
-                    We will do Marketing & Remarketing with Paid and Free Tools
-                  </p>
-                  <button className="w-full px-7 py-4 mt-4 text-sm font-medium text-white capitalize transition-colors border duration-700 transform rounded hover:bg-white hover:text-black lg:w-auto">
-                    CHECKOUT NOW
-                  </button>
-                </div>
-              </div>
-            </div>
-          </header>
-          {/* cart 6  */}
-          <header className="">
-            <div
-              className="w-full bg-center bg-cover h-screen"
-              style={{
-                backgroundImage: `url(${Bannar6})`,
-              }}
-            >
-              <div className="flex items-center pl-28 w-full h-full bg-gray-900/40">
-                <div className="">
-                  <h1 className="text-4xl font-semibold text-white lg:text-4xl font-mono">
-                    School Management Software
-                  </h1>
-                  <p className="text-white font-semibold text-base">
-                    Manage Your student-teacher, Online Class Accounts Form One Software
-                  </p>
-                  <button className="w-full px-7 py-4 mt-4 text-sm font-medium text-white capitalize transition-colors border duration-700 transform rounded hover:bg-white hover:text-black lg:w-auto">
-                    CHECKOUT NOW
-                  </button>
-                </div>
-              </div>
-            </div>
-          </header>
-          {/* cart 7  */}
-          <header className="">
-            <div
-              className="w-full bg-center bg-cover h-screen"
-              style={{
-                backgroundImage: `url(${Bannar7})`,
-              }}
-            >
-              <div className="flex items-center pl-28 w-full h-full bg-gray-900/40">
-                <div className="">
-                  <h1 className="text-4xl font-semibold text-white lg:text-4xl font-mono">
-                    Small Business Accounts Software
-                  </h1>
-                  <p className="text-white font-semibold text-base">
-                    E office management System Provide Expert Accounting Software
-                  </p>
-                  <button className="w-full px-7 py-4 mt-4 text-sm font-medium text-white capitalize transition-colors border duration-700 transform rounded hover:bg-white hover:text-black lg:w-auto">
-                    CHECKOUT NOW
-                  </button>
-                </div>
-              </div>
-            </div>
-          </header>
+            </header>
+          ))}
         </Carousel>
       </div>
     </div>
