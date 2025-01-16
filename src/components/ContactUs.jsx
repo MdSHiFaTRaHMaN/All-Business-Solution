@@ -17,6 +17,14 @@ const ContactUs = () => {
     Aos.init({ duration: 1000 });
   }, []);
 
+
+  // service_kjq2o8c
+
+  // template_i8p6itg
+
+  // biV3M_B_8H-hfEvNh
+
+
   return (
     <div className="bg-[#110940] text-white py-14 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">

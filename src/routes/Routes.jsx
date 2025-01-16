@@ -9,6 +9,7 @@ import Ecommerce from "../pages/Services/eCommerce/Ecommerce";
 import WebdevPage from "../pages/Services/webdevelopment/WebdevPage";
 import AppDevPage from "../pages/Services/appdevpage/AppDevPage";
 import UiServicesPage from "../pages/Services/uiservicespage/UiServicesPage";
+import MarketingPage from "../pages/Services/marketingpage/MarketingPage";
 
 const Router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const Router = createBrowserRouter([
       {
         path: "/ui-ux-services",
         element : <UiServicesPage />
+      },
+      {
+        path: "/marketing-services",
+        element: <MarketingPage />
       }
     ],
   },

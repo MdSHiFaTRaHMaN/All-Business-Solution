@@ -1,7 +1,12 @@
 import { useState } from "react";
 import { Menu, Drawer, Button } from "antd";
 import { SiMinutemailer } from "react-icons/si";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import {
+  AiOutlineMenu,
+  AiOutlineClose,
+  AiOutlineMinus,
+  AiOutlinePlus,
+} from "react-icons/ai";
 import { Link } from "react-router-dom";
 import AbsLogo from "../assets/Abslogomain.png";
 
@@ -36,10 +41,13 @@ const Navbar = () => {
             <Link to="/eCommerce-service">E-Commerce Solutions</Link>
           </Menu.Item>
           <Menu.Item key="web">
-            <Link to="/webdev-service">Web Development</Link>
+            <Link to="/webdev-service">Web Development Company</Link>
           </Menu.Item>
           <Menu.Item key="mobile">
-            <Link to="/appdev-services">App Development</Link>
+            <Link to="/appdev-services">Software Development</Link>
+          </Menu.Item>
+          <Menu.Item key="marketing">
+            <Link to="/marketing-services">Digital marketing</Link>
           </Menu.Item>
           <Menu.Item key="uiux">
             <Link to="/ui-ux-services">UI/UX Design</Link>
@@ -82,70 +90,126 @@ const Navbar = () => {
               onClick={closeDrawer}
               className="flex items-center space-x-2 text-xl font-bold"
             >
-              <img src={AbsLogo} alt="Logo" width={40} />
+              <img
+                src={AbsLogo}
+                alt="Logo"
+                width={40}
+                className="rounded-full"
+              />
               <span>ABS</span>
             </Link>
             <Button
               type="text"
               onClick={closeDrawer}
-              icon={<AiOutlineClose />}
+              icon={<AiOutlineClose className="text-2xl text-gray-700" />}
             />
           </div>
         }
         placement="right"
         closable={false}
         onClose={closeDrawer}
-        visible={visible}
+        open={visible}
+        bodyStyle={{ padding: "0" }}
+        className="mobile-drawer bg-gray-50"
       >
-        <Menu mode="vertical" className="text-gray-700 font-medium">
+        <Menu
+          mode="inline"
+          className="text-gray-700 font-medium p-4 bg-gray-50"
+        >
           <Menu.Item key="home-mobile">
-            <Link to="/" onClick={closeDrawer}>
+            <Link
+              to="/"
+              onClick={closeDrawer}
+              className="text-gray-700 hover:text-blue-500"
+            >
               Home
             </Link>
           </Menu.Item>
           <Menu.SubMenu
             key="services-mobile"
-            title="Services+"
+            title={<span className="text-gray-800">Services+</span>}
             popupClassName="mobile-submenu"
+            className=""
           >
             <Menu.Item key="ecommerce">
-              <Link to="/eCommerce-service" onClick={closeDrawer}>
+              <Link
+                to="/eCommerce-service"
+                onClick={closeDrawer}
+                className="hover:text-blue-500"
+              >
                 E-Commerce Solutions
               </Link>
             </Menu.Item>
             <Menu.Item key="web">
-              <Link to="/webdev-service" onClick={closeDrawer}>
-                Web Development
+              <Link
+                to="/webdev-service"
+                onClick={closeDrawer}
+                className="hover:text-blue-500"
+              >
+                Web Development Company
               </Link>
             </Menu.Item>
             <Menu.Item key="mobile">
-              <Link to="/appdev-services" onClick={closeDrawer}>
-                App Development
+              <Link
+                to="/appdev-services"
+                onClick={closeDrawer}
+                className="hover:text-blue-500"
+              >
+                Software Development
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="marketing">
+              <Link
+                to="/marketing-services"
+                onClick={closeDrawer}
+                className="hover:text-blue-500"
+              >
+                Digital Marketing
               </Link>
             </Menu.Item>
             <Menu.Item key="uiux">
-              <Link to="/ui-ux-services" onClick={closeDrawer}>
+              <Link
+                to="/ui-ux-services"
+                onClick={closeDrawer}
+                className="hover:text-blue-500"
+              >
                 UI/UX Design
               </Link>
             </Menu.Item>
           </Menu.SubMenu>
           <Menu.Item key="portfolio-mobile">
-            <Link to="/portfolio" onClick={closeDrawer}>
+            <Link
+              to="/portfolio"
+              onClick={closeDrawer}
+              className="text-gray-700 hover:text-blue-500"
+            >
               Portfolio
             </Link>
           </Menu.Item>
           <Menu.Item key="aboutus-mobile">
-            <Link to="/about-us" onClick={closeDrawer}>
+            <Link
+              to="/about-us"
+              onClick={closeDrawer}
+              className="text-gray-700 hover:text-blue-500"
+            >
               About Us
             </Link>
           </Menu.Item>
           <Menu.Item key="article-mobile">
-            <Link to="/article" onClick={closeDrawer}>
+            <Link
+              to="/article"
+              onClick={closeDrawer}
+              className="text-gray-700 hover:text-blue-500"
+            >
               Article
             </Link>
           </Menu.Item>
           <Menu.Item key="contact-mobile">
-            <Link to="/contact" onClick={closeDrawer}>
+            <Link
+              to="/contact"
+              onClick={closeDrawer}
+              className="text-gray-700 hover:text-blue-500"
+            >
               Contact Us
             </Link>
           </Menu.Item>
