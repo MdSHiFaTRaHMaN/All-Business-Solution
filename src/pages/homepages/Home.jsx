@@ -15,7 +15,7 @@ const Home = () => {
       <OurProject />
       <WhyChoose />
       <OurClient />
-      {/* <LastProduct /> */}
+      <LastProduct />
     </div>
   );
 };
