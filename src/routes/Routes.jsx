@@ -10,7 +10,7 @@ import WebdevPage from "../pages/Services/webdevelopment/WebdevPage";
 import AppDevPage from "../pages/Services/appdevpage/AppDevPage";
 import UiServicesPage from "../pages/Services/uiservicespage/UiServicesPage";
 import MarketingPage from "../pages/Services/marketingpage/MarketingPage";
-import Loading from "../Loading";
+
 
 const Router = createBrowserRouter([
   {
