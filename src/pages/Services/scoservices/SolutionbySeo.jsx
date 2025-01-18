@@ -4,7 +4,7 @@ import { FaMapMarkerAlt, FaShoppingCart, FaCog, FaChartBar } from "react-icons/f
 import "aos/dist/aos.css"; // Import AOS styles
 import AOS from "aos";
 
-const SeoSolution = () => {
+const SolutionbySeo = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 }); // Initialize AOS animation
   }, []);
@@ -124,4 +124,4 @@ const SeoSolution = () => {
   );
 };
 
-export default SeoSolution;
+export default SolutionbySeo;

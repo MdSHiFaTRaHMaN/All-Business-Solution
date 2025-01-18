@@ -3,7 +3,7 @@ import FAQ from "./FAQ";
 import ScoPackages from "./ScoPackages";
 import SeoAnalytics from "./SeoAnalytics";
 import ScoBannar from "./SeoBannar";
-import SeoSolution from "./SEOSolution";
+import SeoSolution from "./SolutionbySeo";
 
 const ScoServicesPage = () => {
     return (
