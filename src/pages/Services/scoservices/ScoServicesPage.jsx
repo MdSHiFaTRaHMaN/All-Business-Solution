@@ -1,4 +1,5 @@
 import AboutSco from "./AboutSco";
+import DataMarketing from "./DataMarketing";
 import FAQ from "./FAQ";
 import ScoPackages from "./ScoPackages";
 import SeoAnalytics from "./SeoAnalytics";
@@ -12,6 +13,7 @@ const ScoServicesPage = () => {
            <AboutSco />
            <SeoSolution />
            <SeoAnalytics />
+           <DataMarketing />
            <ScoPackages />
            <FAQ />
         </div>
