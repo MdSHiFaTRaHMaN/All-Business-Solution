@@ -52,6 +52,9 @@ const Navbar = () => {
           <Menu.Item key="uiux">
             <Link to="/ui-ux-services">UI/UX Design</Link>
           </Menu.Item>
+          <Menu.Item key="sco">
+            <Link to="/seo-services">SCO Optimization</Link>
+          </Menu.Item>
         </Menu.SubMenu>
         <Menu.Item key="portfolio" className="hover:text-blue-600">
           <Link to="/portfolio">Portfolio</Link>
@@ -174,6 +177,15 @@ const Navbar = () => {
                 className="hover:text-blue-500"
               >
                 UI/UX Design
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="sco">
+              <Link
+                to="/seo-services"
+                onClick={closeDrawer}
+                className="hover:text-blue-500"
+              >
+                SCO Optimization
               </Link>
             </Menu.Item>
           </Menu.SubMenu>

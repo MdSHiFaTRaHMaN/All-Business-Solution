@@ -10,7 +10,7 @@ import WebdevPage from "../pages/Services/webdevelopment/WebdevPage";
 import AppDevPage from "../pages/Services/appdevpage/AppDevPage";
 import UiServicesPage from "../pages/Services/uiservicespage/UiServicesPage";
 import MarketingPage from "../pages/Services/marketingpage/MarketingPage";
-
+import ScoServicesPage from "../pages/Services/scoservices/ScoServicesPage";
 
 const Router = createBrowserRouter([
   {
@@ -23,39 +23,43 @@ const Router = createBrowserRouter([
       },
       {
         path: "/about-us",
-        element: <AboutPage />
+        element: <AboutPage />,
       },
       {
         path: "/article",
-        element: <ArticlePage />
+        element: <ArticlePage />,
       },
       {
         path: "/portfolio",
-        element : <PortfolioPage />
+        element: <PortfolioPage />,
       },
       {
         path: "/contact",
-        element: <ContactPage />
+        element: <ContactPage />,
       },
       {
         path: "/eCommerce-service",
-        element: <Ecommerce />
+        element: <Ecommerce />,
       },
       {
         path: "/webdev-service",
-        element: <WebdevPage />
+        element: <WebdevPage />,
       },
       {
         path: "/appdev-services",
-        element: <AppDevPage />
+        element: <AppDevPage />,
       },
       {
         path: "/ui-ux-services",
-        element : <UiServicesPage />
+        element: <UiServicesPage />,
       },
       {
         path: "/marketing-services",
-        element: <MarketingPage />
+        element: <MarketingPage />,
+      },
+      {
+        path: "/seo-services",
+        element: <ScoServicesPage />
       }
     ],
   },
