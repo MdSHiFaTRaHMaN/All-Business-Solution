@@ -1,3 +1,4 @@
+import AbsLogo from "../assets/Abslogomain.png";
 
 const Footer = () => {
   return (
@@ -6,9 +7,7 @@ const Footer = () => {
         {/* Brand Section */}
         <div className="flex items-center mb-4 sm:mb-0">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
-            <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold px-2 py-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-              ABS
-            </span>
+            <img src={AbsLogo} alt="" width={60}/>
             <span className="ml-3 text-2xl font-bold">
               All Business Soluition
             </span>
@@ -16,12 +15,12 @@ const Footer = () => {
         </div>
 
         {/* Navigation Links */}
-        <div className="flex flex-wrap text-lg justify-center sm:justify-start gap-6">
+        {/* <div className="flex flex-wrap text-lg justify-center sm:justify-start gap-6">
           <a className="hover:text-gray-400">About Us</a>
           <a className="hover:text-gray-400">Services</a>
           <a className="hover:text-gray-400">Blog</a>
           <a className="hover:text-gray-400">Contact</a>
-        </div>
+        </div> */}
 
         {/* Social Media Icons */}
         <div className="flex justify-center sm:justify-end mt-6 sm:mt-0 gap-4 text-lg">

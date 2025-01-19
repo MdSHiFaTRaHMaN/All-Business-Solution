@@ -30,10 +30,10 @@ const ContactUs = () => {
 
     emailjs
       .send(
-        "service_j0uxm7t", // Replace with your EmailJS service ID
-        "template_ondxgmp", // Replace with your EmailJS template ID
+        "service_j0uxm7t",
+        "template_ondxgmp",
         templateParams,
-        "kEZeAbx0kRXN0azu5" // Replace with your EmailJS public key
+        "kEZeAbx0kRXN0azu5"
       )
       .then(
         (result) => {
@@ -45,70 +45,72 @@ const ContactUs = () => {
       );
   };
 
-
   return (
     <div className="bg-[#110940] text-white py-14 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Form Section */}
         <div data-aos="fade-up">
-      <h2 className="text-4xl font-bold mb-6">Contact Us</h2>
-      <Form layout="vertical" className="space-y-4" onFinish={onFinish}>
-        <Form.Item
-          label="Your Name"
-          name="name"
-          rules={[{ required: true, message: "Please enter your name!" }]}
-        >
-          <Input className="rounded-md py-3" placeholder="Your Name" />
-        </Form.Item>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Form.Item
-            label="Your Phone Number"
-            name="phone"
-            rules={[
-              {
-                required: true,
-                message: "Please enter your phone number!",
-              },
-            ]}
-          >
-            <Input className="rounded-md py-3" placeholder="Your Phone Number" />
-          </Form.Item>
-          <Form.Item
-            label="Your Email"
-            name="email"
-            rules={[
-              {
-                required: true,
-                type: "email",
-                message: "Please enter a valid email!",
-              },
-            ]}
-          >
-            <Input className="rounded-md py-3" placeholder="Your Email" />
-          </Form.Item>
+          <h2 className="text-4xl font-bold mb-6">Contact Us</h2>
+          <Form layout="vertical" className="space-y-4" onFinish={onFinish}>
+            <Form.Item
+              label="Your Name"
+              name="name"
+              rules={[{ required: true, message: "Please enter your name!" }]}
+            >
+              <Input className="rounded-md py-3" placeholder="Your Name" />
+            </Form.Item>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <Form.Item
+                label="Your Phone Number"
+                name="phone"
+                rules={[
+                  {
+                    required: true,
+                    message: "Please enter your phone number!",
+                  },
+                ]}
+              >
+                <Input
+                  className="rounded-md py-3"
+                  placeholder="Your Phone Number"
+                />
+              </Form.Item>
+              <Form.Item
+                label="Your Email"
+                name="email"
+                rules={[
+                  {
+                    required: true,
+                    type: "email",
+                    message: "Please enter a valid email!",
+                  },
+                ]}
+              >
+                <Input className="rounded-md py-3" placeholder="Your Email" />
+              </Form.Item>
+            </div>
+            <Form.Item
+              label="Your Message"
+              name="message"
+              rules={[
+                { required: true, message: "Please enter your message!" },
+              ]}
+            >
+              <Input.TextArea
+                className="rounded-md"
+                rows={4}
+                placeholder="Your Message"
+              />
+            </Form.Item>
+            <Button
+              type="primary"
+              htmlType="submit"
+              className="bg-red-500 hover:bg-red-600 text-white font-bold px-6 py-5 rounded-md"
+            >
+              Contact Now
+            </Button>
+          </Form>
         </div>
-        <Form.Item
-          label="Your Message"
-          name="message"
-          rules={[
-            { required: true, message: "Please enter your message!" },
-          ]}
-        >
-          <Input.TextArea
-            className="rounded-md"
-            rows={4}
-            placeholder="Your Message"
-          />
-        </Form.Item>
-        <Button
-          type="primary"
-          htmlType="submit"
-          className="bg-red-500 hover:bg-red-600 text-white font-bold px-6 py-5 rounded-md"
-        >
-          Contact Now
-        </Button>
-      </Form>
-    </div>
 
         {/* Contact Info Section */}
         <div data-aos="fade-down" className="space-y-6">
@@ -120,7 +122,7 @@ const ContactUs = () => {
             </div>
             <div className="flex items-center space-x-4">
               <MailOutlined className="text-xl" />
-              <span>abs@gmail.com</span>
+              <span>allbussinesssoluition@gmail.com</span>
             </div>
             <div className="flex items-center space-x-4">
               <HomeOutlined className="text-xl" />
