@@ -16,7 +16,7 @@ createRoot(document.getElementById("root")).render(
       outerAlpha={0.5}
       innerScale={1.2}
       outerScale={1.5}
-      trailingSpeed={5}
+      trailingSpeed={2}
       outerStyle={{
         backgroundColor: "rgba(255, 215, 0, 0.1)",
         border: "2px solid rgba(255, 215, 0, 0.8)",

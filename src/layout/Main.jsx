@@ -53,7 +53,7 @@ const Main = () => {
   };
 
   return (
-    <div>
+    <div className="cursor-default">
       <Navbar />
       <Outlet />
       <ContactUs />
