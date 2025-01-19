@@ -64,5 +64,17 @@ body {
       transform: rotate(360deg);
     }
   }
+
+  
+  .custom-submenu .ant-menu-item {
+    white-space: normal; 
+    line-height: 1.5; 
+    padding: 10px 16px; 
+    word-break: break-word;
+  }
+  
+  .custom-submenu .ant-menu-item a {
+    display: block; 
+  }
   
   

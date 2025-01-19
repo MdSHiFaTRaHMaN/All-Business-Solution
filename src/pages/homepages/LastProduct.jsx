@@ -15,7 +15,7 @@ const LastProduct = () => {
 
   const products = [
     {
-      title: "Prep Service FBA",
+      title: "CurGuru",
       description: "We know all your online business problems and how to solve them",
       features: [
         "Order management",
@@ -40,7 +40,7 @@ const LastProduct = () => {
     },
     {
       title: "Commandes pro Admin",
-      description: "Manage your customer accounts",
+      description: "Manage your customer Order",
       features: [
         "User Module",
         "Management Module",
@@ -52,14 +52,14 @@ const LastProduct = () => {
     },
     {
       title: "Wings Blast",
-      description: "Accounts software",
+      description: "eCommarce Websites",
       features: [
-        "Income Reports",
-        "Expenses Reports",
-        "Total Report",
-        "Weekly Report",
-        "Monthly Report",
-        "Transaction Signature",
+        "User Management",
+        "Product Management",
+        "Order Management",
+        "Payment Management",
+        "Auto Complate Location",
+        "Admin Managment",
       ],
     },
   ];

@@ -1,11 +1,11 @@
 import ContactBannar from "./ContactBannar";
-import ContactForm from "./ContactForm";
+// import ContactForm from "./ContactForm";
 
 const ContactPage = () => {
     return (
         <div>
             <ContactBannar />
-            <ContactForm />
+            {/* <ContactForm /> */}
         </div>
     );
 };

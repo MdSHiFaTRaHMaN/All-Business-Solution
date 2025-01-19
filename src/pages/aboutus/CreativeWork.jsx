@@ -42,26 +42,29 @@ const CreativeWork = () => {
 
       {/* Creative Works Grid */}
       <div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto"
-        data-aos="fade-up"
-      >
-        {works.map((work, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center p-6 sm:p-8 bg-white border border-gray-200 shadow-md rounded-xl hover:bg-yellow-800 hover:text-white transition-colors duration-300"
-            data-aos="zoom-in"
-            data-aos-delay={work.delay}
-          >
-            {work.icon}
-            <h2 className="mt-4 text-xl sm:text-2xl font-semibold">
-              {work.title}
-            </h2>
-            <p className="mt-2 text-gray-600 group-hover:text-white text-center text-sm sm:text-base">
-              {work.description}
-            </p>
-          </div>
-        ))}
+  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto p-6"
+  data-aos="fade-up"
+>
+  {works.map((work, index) => (
+    <div
+      key={index}
+      className="relative flex flex-col items-center p-6 sm:p-8 bg-white border border-gray-200 shadow-lg rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-700 hover:text-white"
+      data-aos="zoom-in"
+      data-aos-delay={work.delay}
+    >
+      <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 text-yellow-600 group-hover:bg-white group-hover:text-yellow-300">
+        {work.icon}
       </div>
+      <h2 className="mt-6 text-xl sm:text-2xl font-bold text-center">
+        {work.title}
+      </h2>
+      <p className="mt-3 text-center text-sm sm:text-base  leading-relaxed">
+        {work.description}
+      </p>
+    </div>
+  ))}
+</div>
+
     </section>
   );
 };

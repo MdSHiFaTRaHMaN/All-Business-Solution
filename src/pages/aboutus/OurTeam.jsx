@@ -1,6 +1,11 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Nayon from "../../assets/nayon.png";
+import Sakib from "../../assets/shakib.png";
+import Kawsar from "../../assets/kawsar.png";
+import Shifat from "../../assets/shifat.png";
+
 
 const OurTeam = () => {
   useEffect(() => {
@@ -17,90 +22,71 @@ const OurTeam = () => {
             Best Our Team
           </h2>
         </div>
-
-        {/* Team Grid */}
-        <div
-          className="grid gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-          data-aos="fade-up"
-        >
-          {/* Team Member 1 */}
-          <div
-            className="w-full max-w-xs text-center"
-            data-aos="zoom-in"
-            data-aos-delay="100"
-          >
+        <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
+          {/* nayon  */}
+          <div className="flex flex-col items-center p-2 transition-all duration-300 transform bg-white border rounded-lg shadow-md hover:shadow-lg cursor-pointer">
             <img
-              className="object-cover object-center w-full h-48 mx-auto rounded-lg"
-              src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80"
-              alt="avatar"
+              className="object-cover w-64 h-64 rounded bg-gray-100 border-2 border-gray-300"
+              src={Nayon}
+              alt="Profile Picture"
             />
-            <div className="mt-2">
-              <h3 className="text-2xl font-medium text-black">Nayon Ahamed</h3>
-              <span className="mt-1 font-medium text-gray-600">
-                Senior Flutter Developer
-              </span>
-            </div>
+
+            <h1 className="mt-2 text-2xl font-bold text-gray-800 capitalize group-hover:text-white">
+              Nayon Coders
+            </h1>
+
+            <p className=" text-lg text-gray-600 capitalize group-hover:text-gray-200">
+              Senior Flutter Developer
+            </p>
           </div>
 
-          {/* Team Member 2 */}
-          <div
-            className="w-full max-w-xs text-center"
-            data-aos="zoom-in"
-            data-aos-delay="200"
-          >
+          {/* shakib  */}
+          <div className="flex flex-col items-center p-2 transition-all duration-300 transform bg-white border rounded-lg shadow-md hover:shadow-lg cursor-pointer">
             <img
-              className="object-cover object-center w-full h-48 mx-auto rounded-lg"
-              src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80"
-              alt="avatar"
+              className="object-cover w-64 h-64 rounded bg-gray-100 border-2 border-gray-300"
+              src={Sakib}
+              alt="Profile Picture"
             />
-            <div className="mt-2">
-              <h3 className="text-2xl font-medium text-black">Shakib KB</h3>
-              <span className="mt-1 font-medium text-gray-600">
-                Flutter Developer
-              </span>
-            </div>
-          </div>
 
-          {/* Team Member 3 */}
-          <div
-            className="w-full max-w-xs text-center"
-            data-aos="zoom-in"
-            data-aos-delay="300"
-          >
-            <img
-              className="object-cover object-center w-full h-48 mx-auto rounded-lg"
-              src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80"
-              alt="avatar"
-            />
-            <div className="mt-2">
-              <h3 className="text-2xl font-medium text-black">
-                Md Kawsar Hasan
-              </h3>
-              <span className="mt-1 font-medium text-gray-600">
-                MERN Stack Developer
-              </span>
-            </div>
-          </div>
+            <h1 className="mt-2 text-2xl font-bold text-gray-800 capitalize group-hover:text-white">
+             Shakib KB
+            </h1>
 
-          {/* Team Member 4 */}
-          <div
-            className="w-full max-w-xs text-center"
-            data-aos="zoom-in"
-            data-aos-delay="400"
-          >
+            <p className=" text-lg text-gray-600 capitalize group-hover:text-gray-200">
+              Flutter Developer
+            </p>
+          </div>
+          {/* kawsar  */}
+          <div className="flex flex-col items-center p-2 transition-all duration-300 transform bg-white border rounded-lg shadow-md hover:shadow-lg cursor-pointer">
             <img
-              className="object-cover object-center w-full h-48 mx-auto rounded-lg"
-              src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80"
-              alt="avatar"
+              className="object-cover w-64 h-64 rounded bg-gray-100 border-2 border-gray-300"
+              src={Kawsar}
+              alt="Profile Picture"
             />
-            <div className="mt-2">
-              <h3 className="text-2xl font-medium text-black">
-                Md Shifat Rahman
-              </h3>
-              <span className="mt-1 font-medium text-gray-600">
-                Frontend Developer
-              </span>
-            </div>
+
+            <h1 className="mt-2 text-2xl font-bold text-gray-800 capitalize group-hover:text-white">
+            Md Kawsar Hasan 
+            </h1>
+
+            <p className=" text-lg text-gray-600 capitalize group-hover:text-gray-200">
+            Full Stack Developer
+            </p>
+          </div>
+          {/* shifat  */}
+          <div className="flex flex-col items-center p-2 transition-all duration-300 transform bg-white border rounded-lg shadow-md hover:shadow-lg cursor-pointer">
+            <img
+              className="object-cover w-64 h-64 rounded bg-gray-100 border-2 border-gray-300"
+              src={Shifat}
+              alt="Profile Picture"
+            />
+
+            <h1 className="mt-2 text-2xl font-bold text-gray-800 capitalize group-hover:text-white">
+              Md Shifat Rahman
+            </h1>
+
+            <p className=" text-lg text-gray-600 capitalize group-hover:text-gray-200">
+              Font-end Developer
+            </p>
           </div>
         </div>
       </div>

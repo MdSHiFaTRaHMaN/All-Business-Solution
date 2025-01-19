@@ -1,12 +1,7 @@
 import { useState } from "react";
 import { Menu, Drawer, Button } from "antd";
 import { SiMinutemailer } from "react-icons/si";
-import {
-  AiOutlineMenu,
-  AiOutlineClose,
-  AiOutlineMinus,
-  AiOutlinePlus,
-} from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import AbsLogo from "../assets/Abslogomain.png";
 
@@ -35,7 +30,7 @@ const Navbar = () => {
         <Menu.SubMenu
           key="services"
           title="Services+"
-          className="hover:text-blue-600"
+          className="hover:text-blue-600 custom-submenu grid grid-cols-2"
         >
           <Menu.Item key="ecommerce">
             <Link to="/eCommerce-service">E-Commerce Solutions</Link>
@@ -53,9 +48,10 @@ const Navbar = () => {
             <Link to="/ui-ux-services">UI/UX Design</Link>
           </Menu.Item>
           <Menu.Item key="sco">
-            <Link to="/seo-services">SCO Optimization</Link>
+            <Link to="/seo-services">SEO Optimization</Link>
           </Menu.Item>
         </Menu.SubMenu>
+
         <Menu.Item key="portfolio" className="hover:text-blue-600">
           <Link to="/portfolio">Portfolio</Link>
         </Menu.Item>
@@ -185,7 +181,7 @@ const Navbar = () => {
                 onClick={closeDrawer}
                 className="hover:text-blue-500"
               >
-                SCO Optimization
+                SEO Optimization
               </Link>
             </Menu.Item>
           </Menu.SubMenu>

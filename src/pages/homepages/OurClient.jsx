@@ -3,16 +3,20 @@ import { Button } from "antd"; // Ant Design Button
 import { FaRegSmile } from "react-icons/fa"; // React Icons
 import AOS from "aos";
 import "aos/dist/aos.css"; // AOS Animation CSS
-import CompanyLogo from "../../assets/Logo.png";
 import Company from "../../assets/Admin Logo.png";
+import AOA from "../../assets/alloneautos.jpg"
+import Hangest from "../../assets/Hangest.jpg"
+import Commando from "../../assets/Commando.png"
+import WingsBlast from "../../assets/wingblastCony.jpeg"
+import CarGuru from "../../assets/Carguru.png"
 
 const clients = [
-  { id: 1, name: "সহযোগী শপ", image: CompanyLogo },
-  { id: 2, name: "The Technews", image: Company },
-  { id: 3, name: "Minwal", image: Company },
-  { id: 4, name: "Chocolate", image: Company },
-  { id: 5, name: "Nusuki Makkah", image: Company },
-  { id: 6, name: "Kuhel", image: Company },
+  { id: 1, name: "All One Autos", image: AOA },
+  { id: 2, name: "Hungeat Driver", image: Hangest },
+  { id: 3, name: "Commandes Pro", image: Commando },
+  { id: 4, name: "Prep Services FBA", image: Company },
+  { id: 5, name: "Wings Blast", image: WingsBlast },
+  { id: 6, name: "Car Guru", image: CarGuru },
 ];
 
 const OurClient = () => {
@@ -64,7 +68,7 @@ const OurClient = () => {
             <img
               src={client.image}
               alt={client.name}
-              className="w-28 h-28 object-contain rounded-full border border-gray-200 p-2"
+              className="w-28 h-28 object-contain rounded border border-gray-200 p-1"
             />
             <p className="text-base font-medium text-gray-700">{client.name}</p>
           </div>

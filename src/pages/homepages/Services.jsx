@@ -1,53 +1,29 @@
 import React, { useEffect } from "react";
 import { Card } from "antd";
 import {
-  FaTruck,
-  FaPaintBrush,
   FaSearchDollar,
-  FaSchool,
   FaMobileAlt,
-  FaServer,
   FaShoppingCart,
   FaCode,
   FaGlobe,
 } from "react-icons/fa";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import { IoStatsChartSharp } from "react-icons/io5";
 
 const services = [
+  
   {
-    icon: <FaTruck size={40} className="text-blue-500" />,
-    title: "Courier Management Software",
-    description: "Find the best courier management software near you!",
-  },
-  {
-    icon: <FaPaintBrush size={40} className="text-blue-500" />,
-    title: "Graphic Design",
+    icon: <FaGlobe size={40} className="text-blue-500" />,
+    title: "Web Devlopment & Designer",
     description:
-      "Workspace Infotech has a solid experience in delivering Graphic/Web design services.",
+      "We offer unique services in web development ushered from its long technical history.",
   },
   {
-    icon: <FaSearchDollar size={40} className="text-blue-500" />,
-    title: "SEO & SMS Marketing",
+    icon: <FaCode size={40} className="text-blue-500" />,
+    title: "App Development",
     description:
-      "SEO is the process of affecting the visibility of a website or a web page in a web search.",
-  },
-  {
-    icon: <FaSchool size={40} className="text-blue-500" />,
-    title: "School Management",
-    description: "School Management",
-  },
-  {
-    icon: <FaMobileAlt size={40} className="text-blue-500" />,
-    title: "Mobile Applications Developments",
-    description:
-      "In our Web Applications all mobile apps are developed to deliver content.",
-  },
-  {
-    icon: <FaServer size={40} className="text-blue-500" />,
-    title: "Domain & Hosting",
-    description:
-      "Find Best 2020 Web Hosting providers using price comparisons, reviews, specials.",
+      "We offer a completely bespoke business App design service.",
   },
   {
     icon: <FaShoppingCart size={40} className="text-blue-500" />,
@@ -56,17 +32,25 @@ const services = [
       "E-commerce (EC) is the buying and selling of goods and services.",
   },
   {
-    icon: <FaCode size={40} className="text-blue-500" />,
-    title: "Software Development",
+    icon: <IoStatsChartSharp  size={40} className="text-blue-500" />,
+    title: "Digital Marketing",
     description:
-      "We offer a completely bespoke business software design service.",
+      "Workspace Infotech has a solid experience in delivering Graphic/Web design services.",
   },
   {
-    icon: <FaGlobe size={40} className="text-blue-500" />,
-    title: "Web Technology",
+    icon: <FaSearchDollar size={40} className="text-blue-500" />,
+    title: "SEO Optimaization",
     description:
-      "We offer unique services in web development ushered from its long technical history.",
+      "SEO is the process of affecting the visibility of a website or a web page in a web search.",
   },
+  {
+    icon: <FaMobileAlt size={40} className="text-blue-500" />,
+    title: "UI & UX Design",
+    description:
+      "In our Web Applications all mobile apps are developed to deliver content.",
+  },
+
+  
 ];
 
 const ServicesGrid = () => {

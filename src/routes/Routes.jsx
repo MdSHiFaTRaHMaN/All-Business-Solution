@@ -11,6 +11,7 @@ import AppDevPage from "../pages/Services/appdevpage/AppDevPage";
 import UiServicesPage from "../pages/Services/uiservicespage/UiServicesPage";
 import MarketingPage from "../pages/Services/marketingpage/MarketingPage";
 import ScoServicesPage from "../pages/Services/scoservices/ScoServicesPage";
+import App from "../App.jsx"
 
 const Router = createBrowserRouter([
   {
@@ -60,6 +61,10 @@ const Router = createBrowserRouter([
       {
         path: "/seo-services",
         element: <ScoServicesPage />
+      },
+      {
+        path: "/app",
+        element : <App />
       }
     ],
   },

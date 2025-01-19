@@ -23,7 +23,7 @@ const ContactBannar = () => {
         data-aos-delay="500"
       >
         <h1 className="text-4xl lg:text-5xl font-bold text-white mb-3">
-          Articles
+          Contact
         </h1>
         <p className=" text-gray-300 text-center px-4 lg:px-0">
           <div className="text-white">
