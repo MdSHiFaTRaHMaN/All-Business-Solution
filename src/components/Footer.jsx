@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import AbsLogo from "../assets/Abslogomain.png";
+import AbsLogo from "../assets/allbusinesssolution.png";
 import { TbBrandFiverr } from "react-icons/tb";
 import { SiUpwork } from "react-icons/si";
 import { CiLinkedin } from "react-icons/ci";
@@ -14,7 +14,7 @@ const Footer = () => {
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
             <img src={AbsLogo} alt="" width={60} />
             <span className="ml-3 text-2xl font-bold">
-              All Business Soluition
+              All Business Solution
             </span>
           </a>
         </div>

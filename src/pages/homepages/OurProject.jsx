@@ -69,7 +69,7 @@ const OurProject = () => {
         <p className="text-yellow-600 font-medium text-sm sm:text-base uppercase">
           Awesome Works
         </p>
-        <h1 className="text-3xl sm:text-4xl font-bold text-green-600">
+        <h1 className="text-3xl sm:text-4xl font-bold text-green-600" data-aos="zoom-in-up">
           Our Creative Works
         </h1>
         <p className="text-gray-600 mt-2 sm:text-lg">

@@ -6,7 +6,6 @@ import Sakib from "../../assets/shakib.png";
 import Kawsar from "../../assets/kawsar.png";
 import Shifat from "../../assets/shifat.png";
 
-
 const OurTeam = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -22,7 +21,10 @@ const OurTeam = () => {
             Best Our Team
           </h2>
         </div>
-        <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
+        <div
+          data-aos="fade-up"
+          className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4"
+        >
           {/* nayon  */}
           <div className="flex flex-col items-center p-2 transition-all duration-300 transform bg-white border rounded-lg shadow-md hover:shadow-lg cursor-pointer">
             <img
@@ -49,7 +51,7 @@ const OurTeam = () => {
             />
 
             <h1 className="mt-2 text-2xl font-bold text-gray-800 capitalize group-hover:text-white">
-             Shakib KB
+              Shakib KB
             </h1>
 
             <p className=" text-lg text-gray-600 capitalize group-hover:text-gray-200">
@@ -65,11 +67,11 @@ const OurTeam = () => {
             />
 
             <h1 className="mt-2 text-2xl font-bold text-gray-800 capitalize group-hover:text-white">
-            Md Kawsar Hasan 
+              Md Kawsar Hasan
             </h1>
 
             <p className=" text-lg text-gray-600 capitalize group-hover:text-gray-200">
-            Full Stack Developer
+              Full Stack Developer
             </p>
           </div>
           {/* shifat  */}

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Bannar from "../../../assets/ui-uxImage.jpg";
+import Bannar from "../../../assets/uiuxbannar.jpg";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -10,7 +10,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[50vh] lg:h-screen">
+    <div className="relative w-full h-[50vh] lg:h-[80vh]">
       <img
         src={Bannar}
         alt="Blog Banner"

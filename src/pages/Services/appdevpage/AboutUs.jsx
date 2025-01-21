@@ -66,37 +66,6 @@ const AboutUs = () => {
           EOMSBD offers easy report generation, billing and invoice management, future forecasting, and bank reconciliation. Plus, EOMSBD provides Islamic financial transaction facilities with witness tracking.
         </p>
       </section>
-
-      {/* FAQ Section */}
-      <section className="mb-8">
-        <h3 className="text-2xl font-semibold text-gray-800 mb-4">FAQ</h3>
-        <div className="space-y-4">
-          <div>
-            <h4 className="font-semibold">Why is accounting software important?</h4>
-            <p className="text-gray-700">
-              It helps manage a company's financial activity digitally and smoothly.
-            </p>
-          </div>
-          <div>
-            <h4 className="font-semibold">What are the benefits of using accounting software?</h4>
-            <p className="text-gray-700">
-              Fast, error-free, simple to use, and cost-effective.
-            </p>
-          </div>
-          <div>
-            <h4 className="font-semibold">What accounting software helps to do?</h4>
-            <p className="text-gray-700">
-              Prepares reports, tracks purchases, manages billing and invoices, and handles customer and vendor management.
-            </p>
-          </div>
-          <div>
-            <h4 className="font-semibold">What are the types of financial software?</h4>
-            <p className="text-gray-700">
-              Spreadsheet, Custom Accounting Software, Commercially-available Software, ERP or Enterprise Resource Planning Software.
-            </p>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

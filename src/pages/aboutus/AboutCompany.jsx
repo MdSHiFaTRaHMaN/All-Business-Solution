@@ -1,4 +1,49 @@
 const AboutCompany = () => {
+  const metrics = [
+    {
+      id: 1,
+      value: "06+",
+      label: "Years of Experience",
+      bgColor: "bg-white",
+      textColor: "text-black",
+    },
+    {
+      id: 2,
+      value: "150+",
+      label: "Apps Developed",
+      bgColor: "bg-red-500",
+      textColor: "text-white",
+    },
+    {
+      id: 3,
+      value: "12+",
+      label: "Countries",
+      bgColor: "bg-black",
+      textColor: "text-white",
+    },
+    {
+      id: 4,
+      value: "90%",
+      label: "Client Retention Rate",
+      bgColor: "bg-white",
+      textColor: "text-black",
+    },
+    {
+      id: 5,
+      value: "100%",
+      label: "Projects Delivered",
+      bgColor: "bg-red-500",
+      textColor: "text-white",
+    },
+    {
+      id: 6,
+      value: "175+",
+      label: "Employees",
+      bgColor: "bg-black",
+      textColor: "text-white",
+    },
+  ];
+
   return (
     <div className="w-full lg:w-10/12 mx-auto p-5">
       <div className="text-center">
@@ -36,7 +81,7 @@ const AboutCompany = () => {
           great lasting relationships.
         </p>
       </div>
-      <div className="flex flex-wrap gap-7 justify-center my-7">
+      {/* <div className="flex flex-wrap gap-7 justify-center my-7">
         <div className="flex">
           <span>+</span>
           <h1 className="text-5xl text-yellow-800">05</h1>
@@ -60,6 +105,20 @@ const AboutCompany = () => {
             Complete
           </h4>
         </div>
+      </div> */}
+      <div className="flex flex-wrap justify-center gap-6 cursor-pointer p-6">
+        {metrics.map((metric) => (
+          <div
+            key={metric.id}
+            className={`w-40 h-32 flex flex-col justify-center items-center rounded-lg shadow-lg ${metric.bgColor} ${metric.textColor}`}
+            data-aos="fade-up"
+            data-aos-delay={`${metric.id * 100}`}
+            data-aos-duration="800"
+          >
+            <h2 className="text-3xl font-bold">{metric.value}</h2>
+            <p className="text-center mt-2 text-sm">{metric.label}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

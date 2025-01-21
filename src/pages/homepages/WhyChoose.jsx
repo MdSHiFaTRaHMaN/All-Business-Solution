@@ -67,7 +67,7 @@ const WhyChoose = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-up">
+        <div>
           <img
             src={Dev}
             width={420}
