@@ -11,7 +11,9 @@ import AppDevPage from "../pages/Services/appdevpage/AppDevPage";
 import UiServicesPage from "../pages/Services/uiservicespage/UiServicesPage";
 import MarketingPage from "../pages/Services/marketingpage/MarketingPage";
 import ScoServicesPage from "../pages/Services/scoservices/ScoServicesPage";
+import PrivacyPolicy from "../pages/PrivacyPolicy.jsx";
 import App from "../App.jsx"
+import TermsOfUse from "../pages/TermsOfUse.jsx";
 
 const Router = createBrowserRouter([
   {
@@ -65,6 +67,14 @@ const Router = createBrowserRouter([
       {
         path: "/app",
         element : <App />
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />
+      },
+      {
+        path: "/terms-of-use",
+        element: <TermsOfUse />
       }
     ],
   },

@@ -12,11 +12,11 @@ import CarGuru from "../../assets/Carguru.png"
 
 const clients = [
   { id: 1, name: "All One Autos", image: AOA },
-  { id: 2, name: "Hungeat Driver", image: Hangest },
+  { id: 2, name: "Hungeat", image: Hangest },
   { id: 3, name: "Commandes Pro", image: Commando },
   { id: 4, name: "Prep Services FBA", image: Company },
   { id: 5, name: "Wings Blast", image: WingsBlast },
-  { id: 6, name: "Car Guru", image: CarGuru },
+  { id: 6, name: "Garir Hat", image: CarGuru },
 ];
 
 const OurClient = () => {
@@ -70,7 +70,7 @@ const OurClient = () => {
               alt={client.name}
               className="w-28 h-28 object-contain rounded border border-gray-200 p-1"
             />
-            <p className="text-base font-medium text-gray-700">{client.name}</p>
+            <p className="text-base text-gray-700 font-semibold">{client.name}</p>
           </div>
         ))}
       </div>

@@ -18,7 +18,7 @@ const projects = [
     title: "Lamyakun",
     description: "Web Development",
     image: WB,
-    aosEffect: "fade-left",
+    aosEffect: "fade-up",
     category: "Web Development",
     language: ["React JS", "Tailwind CSS", "Node JS", "MySQL"],
   },
@@ -26,7 +26,7 @@ const projects = [
     title: "Krittogota Prokasher DOA",
     description: "Mobile App",
     image: WB,
-    aosEffect: "fade-right",
+    aosEffect: "fade-up",
     category: "Mobile App",
     language: ["React JS", "Tailwind CSS", "Node JS", "MySQL"],
   },
@@ -34,7 +34,7 @@ const projects = [
     title: "Custom Software",
     description: "Software Development",
     image: WB,
-    aosEffect: "zoom-in",
+    aosEffect: "fade-down",
     category: "Web Development",
     language: ["React JS", "Tailwind CSS", "Node JS", "MySQL"],
   },
@@ -47,8 +47,6 @@ const OurProject = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      offset: 100,
-      easing: "ease-in-out",
       once: false,
     });
   }, []);
@@ -78,7 +76,10 @@ const OurProject = () => {
           Explore some of our amazing projects tailored to your business needs.
         </p>
         {/* Category Filter */}
-        <div className="flex justify-center mt-6 space-x-3 overflow-x-auto scrollbar-hide">
+        <div
+          data-aos="fade-up"
+          className="flex justify-center mt-6 space-x-3 overflow-x-auto scrollbar-hide"
+        >
           {["All", "Web Development", "eCommerce", "Mobile App"].map(
             (category, idx) => (
               <button
@@ -98,7 +99,10 @@ const OurProject = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div
+        data-aos="fade-up"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
         {filteredProjects.map((project, index) => (
           <div
             key={index}
@@ -142,7 +146,7 @@ const OurProject = () => {
       </div>
 
       {/* See More Button */}
-      <div className="flex justify-center mt-12">
+      <div className="flex justify-center mt-12" data-aos="fade-up">
         <Button
           type="primary"
           size="large"

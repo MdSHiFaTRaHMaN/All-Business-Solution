@@ -1,17 +1,14 @@
 import React from "react";
 import { Form, Input, Button, message } from "antd";
 import { PhoneOutlined, MailOutlined, HomeOutlined } from "@ant-design/icons";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedinIn,
-  FaYoutube,
-} from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "tailwindcss/tailwind.css";
 import emailjs from "emailjs-com";
+import { AiFillGithub } from "react-icons/ai";
+import { CiLinkedin } from "react-icons/ci";
+import { SiUpwork } from "react-icons/si";
+import { TbBrandFiverr } from "react-icons/tb";
 
 const ContactUs = () => {
   React.useEffect(() => {
@@ -126,17 +123,24 @@ const ContactUs = () => {
             </div>
             <div className="flex items-center space-x-4">
               <HomeOutlined className="text-xl" />
-              <span>Manda, Dhaka in Bangladesh.</span>
+              <span>255 Kingston AveBrooklyn NY 11213</span>
             </div>
           </div>
 
           {/* Social Media Icons */}
-          <div className="flex space-x-4 text-xl">
-            <FaFacebookF className="hover:text-blue-600 cursor-pointer" />
-            <FaTwitter className="hover:text-blue-400 cursor-pointer" />
-            <FaInstagram className="hover:text-pink-500 cursor-pointer" />
-            <FaLinkedinIn className="hover:text-blue-700 cursor-pointer" />
-            <FaYoutube className="hover:text-red-600 cursor-pointer" />
+          <div className="flex mt-6 sm:mt-0 gap-4 text-lg">
+            <a className="text-gray-200 hover:text-blue-600">
+              <AiFillGithub className="w-6 h-6" />
+            </a>
+            <a className="text-gray-200 hover:text-blue-400">
+              <CiLinkedin className="w-6 h-6" />
+            </a>
+            <a className="text-gray-200 hover:text-pink-500">
+              <SiUpwork className="w-6 h-6" />
+            </a>
+            <a className="text-gray-200 hover:text-green-600">
+              <TbBrandFiverr className="w-6 h-6" />
+            </a>
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ import {
   PhoneOutlined,
   PhoneTwoTone,
 } from "@ant-design/icons";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   FaFacebookF,
   FaInstagram,
@@ -52,39 +52,12 @@ const Main = () => {
     }
   };
 
-  // লোডিং স্টেট
-  const [isLoading, setIsLoading] = useState(true); // লোডিং স্টেট
-
-  useEffect(() => {
-    // লোডিং শেষ করার জন্য একটি টাইমার
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 3000); // ৩ সেকেন্ড
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div className="cursor-default">
-      {isLoading ? (
-           <div className="flex items-center justify-center min-h-screen bg-gray-100">
-           {/* কাস্টম লোডিং অ্যানিমেশন */}
-           <div className="relative w-20 h-20">
-             {/* বাইরের রিং */}
-             <div className="absolute inset-0 w-full h-full border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-          
-             {/* লাইট ইফেক্ট */}
-             <div className="absolute top-0 left-0 w-20 h-20 rounded-full border-t-4 border-blue-300 animate-pulse"></div>
-           </div>
-         </div>
-      ) : (
-        <div>
-          <Navbar />
-          <Outlet />
-          <ContactUs />
-          <Footer />
-        </div>
-      )}
+      <Navbar />
+      <Outlet />
+      <ContactUs />
+      <Footer />
 
       {/* Float Button */}
       <FloatButton.Group
