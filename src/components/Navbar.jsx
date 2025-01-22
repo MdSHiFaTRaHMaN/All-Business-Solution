@@ -39,7 +39,7 @@ const Navbar = () => {
             <Link to="/webdev-service">Web Development Company</Link>
           </Menu.Item>
           <Menu.Item key="mobile">
-            <Link to="/appdev-services">Software Development</Link>
+            <Link to="/appdev-services">App Development</Link>
           </Menu.Item>
           <Menu.Item key="marketing">
             <Link to="/marketing-services">Digital marketing</Link>
@@ -154,7 +154,7 @@ const Navbar = () => {
                 onClick={closeDrawer}
                 className="hover:text-blue-500"
               >
-                Software Development
+                App Development
               </Link>
             </Menu.Item>
             <Menu.Item key="marketing">

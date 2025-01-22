@@ -1,5 +1,6 @@
 import { FaCheckCircle, FaCode, FaGlobe, FaLaptopCode } from "react-icons/fa";
 import WebIMG from "../../../assets/webdevbannar.png";
+import WorkingProcess from "../../../assets/WorkingProcessweb.png"
 
 const AboutWebDev = () => {
   return (
@@ -43,6 +44,11 @@ const AboutWebDev = () => {
         would you choose us" Right? Ok then, we're going to show you the list of
         our strong expertise or What are we good at to choose us -
       </p>
+      <div className="my-5">
+        <h1 className="text-3xl font-semibold text-center">Our Working Process</h1>
+        <img src={WorkingProcess} alt="" />
+      </div>
+
       <h2 className="text-3xl font-bold text-center text-[#AF986F] mb-6">
         Why Would You Choose Us?
       </h2>
@@ -64,7 +70,7 @@ const AboutWebDev = () => {
         <ul className="grid grid-cols-2 md:grid-cols-3 gap-3 text-gray-600">
           {[
             "Tailwind CSS",
-            "PHP",
+            "WordPress",
             "HTML",
             "CSS",
             "Bootstrap",

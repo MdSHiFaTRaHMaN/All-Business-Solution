@@ -11,6 +11,7 @@ const industries = [
   { title: "Automobile", image: MobilePhone },
   { title: "Business", image: MobilePhone },
   { title: "Fintech", image: MobilePhone },
+  { title: "Car GuRu", image: MobilePhone },
 ];
 
 const responsive = {
@@ -64,7 +65,7 @@ const MobileApp = () => {
               <img
                 src={industry.image}
                 alt={industry.title}
-                className="w-full h-96 object-cover rounded-lg"
+                className="w-full h-96 transition-transform transform hover:scale-125 object-cover rounded-lg"
               />
               <div className="mt-4 bg-gray-700 hover:bg-red-500 transition-all text-white py-2 rounded-lg font-semibold">
                 {industry.title}
