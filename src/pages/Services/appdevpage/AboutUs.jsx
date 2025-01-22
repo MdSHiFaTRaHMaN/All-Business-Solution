@@ -57,13 +57,13 @@ const AboutUs = () => {
         </ul>
       </section>
 
-      {/* Why EOMSBD is Special */}
+      {/* Why ABS(All Business Solution) is Special */}
       <section className="mb-8">
         <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-          Why is the Accounting Software of EOMSBD Special?
+          Why is the Accounting Software of ABS(All Business Solution) Special?
         </h3>
         <p className="text-gray-700">
-          EOMSBD offers easy report generation, billing and invoice management, future forecasting, and bank reconciliation. Plus, EOMSBD provides Islamic financial transaction facilities with witness tracking.
+          ABS(All Business Solution) offers easy report generation, billing and invoice management, future forecasting, and bank reconciliation. Plus, ABS(All Business Solution) provides Islamic financial transaction facilities with witness tracking.
         </p>
       </section>
     </div>

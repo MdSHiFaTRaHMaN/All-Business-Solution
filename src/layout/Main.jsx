@@ -59,7 +59,7 @@ const Main = () => {
     // লোডিং শেষ করার জন্য একটি টাইমার
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000); // ৩ সেকেন্ড
+    }, 2000); // ৩ সেকেন্ড
 
     return () => clearTimeout(timer);
   }, []);

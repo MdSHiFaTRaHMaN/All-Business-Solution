@@ -3,13 +3,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-import MobilePhone from "./assets/mobilephone.png";
+import MobilePhone from "../../../assets/mobilephone.png";
+import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 
 const industries = [
-  { title: "Real Estate", image: MobilePhone },
+  { title: "Resturent", image: MobilePhone },
   { title: "Automobile", image: MobilePhone },
-  { title: "E-Commerce", image: MobilePhone },
+  { title: "Business", image: MobilePhone },
   { title: "Fintech", image: MobilePhone },
 ];
 
@@ -21,7 +21,7 @@ const responsive = {
 
 const MobileApp = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1000, once: false });
   }, []);
 
   const carouselRef = useRef(null);
@@ -47,7 +47,6 @@ const MobileApp = () => {
           infinite={true}
           draggable
           swipeable
-          autoPlaySpeed={3000}
           pauseOnHover
           keyBoardControl
           showDots={false}
@@ -59,6 +58,7 @@ const MobileApp = () => {
             <div
               key={index}
               data-aos="fade-up"
+              data-aos-delay={`${index * 200}`}
               className="bg-gradient-to-b from-red-500 to-black rounded-lg p-6 shadow-lg"
             >
               <img
@@ -76,10 +76,10 @@ const MobileApp = () => {
 
       <div className="flex justify-center items-center mt-6 gap-4">
         <button onClick={handlePrev} className="text-red-500 text-2xl">
-          <LeftOutlined />
+          <FaArrowLeftLong  />
         </button>
         <button onClick={handleNext} className="text-red-500 text-2xl">
-          <RightOutlined />
+          <FaArrowRightLong />
         </button>
       </div>
     </div>
