@@ -69,6 +69,7 @@ const ServicesGrid = () => {
           <Card
             key={index}
             data-aos="fade-up"
+            data-aos-delay={`${index * 100}`}
             hoverable
             className="shadow-lg rounded-lg"
           >

@@ -1,6 +1,7 @@
 import DigitalMarketing from "./DigitalMarketing";
 import Header from "./Header";
 import MarketingFaq from "./MarketingFaq";
+import MarketingServices from "./MarketingServices";
 import MarketingTools from "./MarketingTools";
 
 const MarketingPage = () => {
@@ -9,6 +10,7 @@ const MarketingPage = () => {
             <Header />
             <MarketingTools />
             <DigitalMarketing />
+            <MarketingServices />
             <MarketingFaq />
         </div>
     );

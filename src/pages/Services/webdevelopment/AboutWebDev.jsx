@@ -1,8 +1,46 @@
-import { FaCheckCircle, FaCode, FaGlobe, FaLaptopCode } from "react-icons/fa";
+import { FaCode, FaGlobe, FaLaptopCode } from "react-icons/fa";
 import WebIMG from "../../../assets/webdevbannar.png";
-import WorkingProcess from "../../../assets/WorkingProcessweb.png"
+import WorkingProcess from "../../../assets/WorkingProcessweb.png";
+import MyExprience from "./MyExprience";
 
 const AboutWebDev = () => {
+  const metrics = [
+    {
+      id: 1,
+      value: "06+",
+      label: "Years of Experience",
+      bgColor: "bg-white",
+      textColor: "text-black",
+    },
+    {
+      id: 2,
+      value: "150+",
+      label: "Apps Developed",
+      bgColor: "bg-red-500",
+      textColor: "text-white",
+    },
+    {
+      id: 4,
+      value: "90%",
+      label: "Client Retention Rate",
+      bgColor: "bg-white",
+      textColor: "text-black",
+    },
+    {
+      id: 5,
+      value: "100%",
+      label: "Projects Delivered",
+      bgColor: "bg-red-500",
+      textColor: "text-white",
+    },
+    {
+      id: 6,
+      value: "175+",
+      label: "Employees",
+      bgColor: "bg-black",
+      textColor: "text-white",
+    },
+  ];
   return (
     <div className="w-full lg:w-9/12 mx-auto px-5">
       <h1 className="text-center text-4xl font-semibold text-[#AF986F]">
@@ -44,8 +82,24 @@ const AboutWebDev = () => {
         would you choose us" Right? Ok then, we're going to show you the list of
         our strong expertise or What are we good at to choose us -
       </p>
+      <div className="flex flex-wrap justify-center gap-6 cursor-pointer p-6">
+        {metrics.map((metric) => (
+          <div
+            key={metric.id}
+            className={`w-40 h-32 flex flex-col justify-center items-center rounded-lg shadow-lg ${metric.bgColor} ${metric.textColor}`}
+            data-aos="fade-up"
+            data-aos-delay={`${metric.id * 100}`}
+            data-aos-duration="800"
+          >
+            <h2 className="text-3xl font-bold">{metric.value}</h2>
+            <p className="text-center mt-2 text-sm">{metric.label}</p>
+          </div>
+        ))}
+      </div>
       <div className="my-5">
-        <h1 className="text-3xl font-semibold text-center">Our Working Process</h1>
+        <h1 className="text-3xl font-semibold text-center">
+          Our Working Process
+        </h1>
         <img src={WorkingProcess} alt="" />
       </div>
 
@@ -67,26 +121,7 @@ const AboutWebDev = () => {
         <p className="text-gray-700 mb-4">
           So, here is the list of which we're positively skilled in:
         </p>
-        <ul className="grid grid-cols-2 md:grid-cols-3 gap-3 text-gray-600">
-          {[
-            "Tailwind CSS",
-            "WordPress",
-            "HTML",
-            "CSS",
-            "Bootstrap",
-            "MongoDB",
-            "jQuery",
-            "JavaScript",
-            "Node JS",
-            "React",
-            "MySQL",
-            "JSON",
-          ].map((skill, index) => (
-            <li key={index} className="flex items-center">
-              <FaCheckCircle className="text-green-500 mr-2" /> {skill}
-            </li>
-          ))}
-        </ul>
+        <MyExprience />
       </div>
 
       {/* Digital Marketing Expertise */}

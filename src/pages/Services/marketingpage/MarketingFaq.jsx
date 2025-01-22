@@ -93,7 +93,7 @@ const MarketingFaq = () => {
       >
         {faqData.map((faq) => (
           <Panel
-            header={<span className="text-lg font-medium">{faq.question}</span>}
+            header={<span className="text-md lg:text-lg font-medium">{faq.question}</span>}
             key={faq.key}
             className="bg-gray-100 hover:bg-gray-50 my-5"
           >

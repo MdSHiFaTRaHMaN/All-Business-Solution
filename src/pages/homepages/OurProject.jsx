@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Button } from "antd";
-import { FaLaptopCode } from "react-icons/fa";
+import { Button, Card, Tag, Tooltip } from "antd";
+import { FaLaptopCode, FaReact } from "react-icons/fa";
 import WB from "../../assets/projectimage.jpg";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
     title: "Wings Blast",
-    description: "eCommerce",
+    description: "eCommerce platform providing seamless shopping experience.",
     image: WB,
     aosEffect: "fade-up",
     category: "eCommerce",
@@ -16,27 +17,43 @@ const projects = [
   },
   {
     title: "Lamyakun",
-    description: "Web Development",
+    description: "A modern website built for educational institutions.",
     image: WB,
     aosEffect: "fade-up",
     category: "Web Development",
-    language: ["React JS", "Tailwind CSS", "Node JS", "MySQL"],
-  },
-  {
-    title: "Krittogota Prokasher DOA",
-    description: "Mobile App",
-    image: WB,
-    aosEffect: "fade-up",
-    category: "Mobile App",
     language: ["React JS", "Tailwind CSS", "Node JS", "MySQL"],
   },
   {
     title: "Custom Software",
-    description: "Software Development",
+    description: "Tailored software solutions for business growth.",
     image: WB,
-    aosEffect: "fade-down",
-    category: "Web Development",
+    aosEffect: "fade-up",
+    category: "Software Development",
     language: ["React JS", "Tailwind CSS", "Node JS", "MySQL"],
+  },
+  {
+    title: "TechVerse",
+    description: "A community-driven technology blog.",
+    image: WB,
+    aosEffect: "fade-up",
+    category: "Blog Development",
+    language: ["Next.js", "Chakra UI", "TypeScript"],
+  },
+  {
+    title: "FitLife",
+    description: "A fitness tracking app for healthier living.",
+    image: WB,
+    aosEffect: "fade-up",
+    category: "Health & Fitness",
+    language: ["React Native", "Expo", "MongoDB"],
+  },
+  {
+    title: "Portfolio Pro",
+    description: "An elegant portfolio website for creative professionals.",
+    image: WB,
+    aosEffect: "zoom-in",
+    category: "Portfolio",
+    language: ["React JS", "Framer Motion", "SASS"],
   },
 ];
 
@@ -63,13 +80,16 @@ const OurProject = () => {
   }, [selectedCategory]);
 
   return (
-    <section className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-20">
+    <section className="bg-gray-100 py-16 px-1 sm:px-6 lg:px-20">
       {/* Header Section */}
       <div className="text-center mb-12">
         <p className="text-yellow-600 font-medium text-sm sm:text-base uppercase">
           Awesome Works
         </p>
-        <h1 className="text-3xl sm:text-4xl font-bold text-green-600" data-aos="zoom-in-up">
+        <h1
+          className="text-3xl sm:text-4xl font-bold text-green-600"
+          data-aos="zoom-in-up"
+        >
           Our Creative Works
         </h1>
         <p className="text-gray-600 mt-2 sm:text-lg">
@@ -80,80 +100,95 @@ const OurProject = () => {
           data-aos="fade-up"
           className="flex justify-center mt-6 space-x-3 overflow-x-auto scrollbar-hide"
         >
-          {["All", "Web Development", "eCommerce", "Mobile App"].map(
-            (category, idx) => (
-              <button
-                key={idx}
-                onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 text-sm sm:text-base rounded-lg transition duration-300 ${
-                  selectedCategory === category
-                    ? "bg-green-500 text-white"
-                    : "bg-gray-200 text-gray-800 hover:bg-green-500 hover:text-white"
-                }`}
-              >
-                {category}
-              </button>
-            )
-          )}
+          {[
+            "All",
+            "Web Development",
+            "eCommerce",
+            "Mobile App",
+            "Software Development",
+            "Blog Development",
+            "Health & Fitness",
+            "Portfolio",
+          ].map((category, idx) => (
+            <button
+              key={idx}
+              onClick={() => setSelectedCategory(category)}
+              className={`px-4 py-2 text-sm sm:text-base rounded-lg transition duration-300 ${
+                selectedCategory === category
+                  ? "bg-green-500 text-white"
+                  : "bg-gray-200 text-gray-800 hover:bg-green-500 hover:text-white"
+              }`}
+            >
+              {category}
+            </button>
+          ))}
         </div>
       </div>
 
       {/* Projects Grid */}
-      <div
-        data-aos="fade-up"
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-      >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-2 lg:p-6">
         {filteredProjects.map((project, index) => (
           <div
             key={index}
             data-aos={project.aosEffect}
-            className="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+            className="shadow-lg rounded-lg overflow-hidden bg-white"
           >
-            {/* Project Image */}
-            <div className="relative w-full h-48 sm:h-56 lg:h-60 overflow-hidden rounded-t-lg">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-full object-cover transition-transform transform hover:scale-110 duration-300"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-40 transition duration-300"></div>
-            </div>
-
-            {/* Project Description */}
-            <div className="flex items-center px-4 py-2 bg-gray-100">
-              <FaLaptopCode className="text-green-500 w-6 h-6" />
-              <h3 className="ml-3 text-gray-800 text-base font-medium">
-                {project.description}
-              </h3>
-            </div>
-            <div className="p-4">
-              <h2 className="text-lg sm:text-xl font-semibold text-gray-800">
-                {project.title}
-              </h2>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {project.language.map((lang, idx) => (
-                  <span
-                    key={idx}
-                    className="px-2 py-1 text-xs sm:text-sm bg-green-200 text-green-800 rounded-lg hover:bg-green-300 transition"
-                  >
-                    {lang}
-                  </span>
-                ))}
+            <Card
+              cover={
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-48 object-cover"
+                />
+              }
+              className="border-0"
+            >
+              <div className="flex justify-between items-center mb-4">
+                <h2 className="text-lg font-bold text-gray-800">
+                  {project.title}
+                </h2>
+                <Tooltip title={`${project.category} Project`}>
+                  <FaReact className="text-blue-500 text-xl" />
+                </Tooltip>
               </div>
-            </div>
+
+              <p className="text-gray-600 mb-2">{project.description}</p>
+
+              <div className="mb-4">
+                <span className="text-sm font-medium text-gray-700">
+                  Category:{" "}
+                </span>
+                <Tag color="blue">{project.category}</Tag>
+              </div>
+
+              <div>
+                <span className="text-sm font-medium text-gray-700">
+                  Languages:
+                </span>
+                <div className="flex flex-wrap gap-2 mt-2">
+                  {project.language.map((lang, i) => (
+                    <Tag key={i} color="green">
+                      {lang}
+                    </Tag>
+                  ))}
+                </div>
+              </div>
+            </Card>
           </div>
         ))}
       </div>
 
       {/* See More Button */}
       <div className="flex justify-center mt-12" data-aos="fade-up">
-        <Button
-          type="primary"
-          size="large"
-          className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-medium shadow-md transition-transform transform hover:scale-105"
-        >
-          SEE MORE
-        </Button>
+        <Link to="/portfolio">
+          <Button
+            type="primary"
+            size="large"
+            className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-medium shadow-md transition-transform transform hover:scale-105"
+          >
+            SEE MORE
+          </Button>
+        </Link>
       </div>
     </section>
   );

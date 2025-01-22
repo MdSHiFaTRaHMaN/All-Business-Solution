@@ -1,89 +1,118 @@
-import { useEffect, useRef } from "react";
+import React from "react";
+import { Card, Tooltip, Tag } from "antd";
+import { FaReact } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-import MobilePhone from "./assets/mobilephone.png";
+import "tailwindcss/tailwind.css";
+import WB from "./assets/mobileapp5.jpg"
 
-const industries = [
-  { title: "Real Estate", image: MobilePhone },
-  { title: "Automobile", image: MobilePhone },
-  { title: "E-Commerce", image: MobilePhone },
-  { title: "Fintech", image: MobilePhone },
+// Initialize AOS
+AOS.init();
+
+const projects = [
+  {
+    title: "Wings Blast",
+    description: "eCommerce platform providing seamless shopping experience.",
+    image: WB,
+    aosEffect: "fade-up",
+    category: "eCommerce",
+    language: ["React JS", "Tailwind CSS", "Node JS", "MySQL"],
+  },
+  {
+    title: "Lamyakun",
+    description: "A modern website built for educational institutions.",
+    image: WB,
+    aosEffect: "fade-up",
+    category: "Web Development",
+    language: ["React JS", "Tailwind CSS", "Node JS", "MySQL"],
+  },
+  {
+    title: "Custom Software",
+    description: "Tailored software solutions for business growth.",
+    image: WB,
+    aosEffect: "fade-up",
+    category: "Software Development",
+    language: ["React JS", "Tailwind CSS", "Node JS", "MySQL"],
+  },
+  {
+    title: "TechVerse",
+    description: "A community-driven technology blog.",
+    image: WB,
+    aosEffect: "fade-right",
+    category: "Blog Development",
+    language: ["Next.js", "Chakra UI", "TypeScript"],
+  },
+  {
+    title: "FitLife",
+    description: "A fitness tracking app for healthier living.",
+    image: WB,
+    aosEffect: "fade-left",
+    category: "Health & Fitness",
+    language: ["React Native", "Expo", "MongoDB"],
+  },
+  {
+    title: "Portfolio Pro",
+    description: "An elegant portfolio website for creative professionals.",
+    image: WB,
+    aosEffect: "zoom-in",
+    category: "Portfolio",
+    language: ["React JS", "Framer Motion", "SASS"],
+  },
 ];
 
-const responsive = {
-  desktop: { breakpoint: { max: 3000, min: 1024 }, items: 4 },
-  tablet: { breakpoint: { max: 1024, min: 464 }, items: 2 },
-  mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
-};
 
-const MobileApp = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
-
-  const carouselRef = useRef(null);
-
-  const handlePrev = () => {
-    carouselRef.current?.previous();
-  };
-
-  const handleNext = () => {
-    carouselRef.current?.next();
-  };
-
+const ProjectCard = () => {
   return (
-    <div className="py-12 bg-white text-center w-full lg:w-10/12 mx-auto">
-      <h2 className="text-3xl font-bold text-gray-800">
-        <span className="text-red-500">Industries</span> We Have Served
-      </h2>
-
-      <div className="mt-8 relative">
-        <Carousel
-          ref={carouselRef}
-          responsive={responsive}
-          infinite={true}
-          draggable
-          swipeable
-          autoPlaySpeed={3000}
-          pauseOnHover
-          keyBoardControl
-          showDots={false}
-          arrows={false}
-          containerClass="container-padding-bottom"
-          itemClass="px-4"
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+      {projects.map((project, index) => (
+        <div
+          key={index}
+          data-aos={project.aosEffect}
+          className="shadow-lg rounded-lg overflow-hidden bg-white"
         >
-          {industries.map((industry, index) => (
-            <div
-              key={index}
-              data-aos="fade-up"
-              className="bg-gradient-to-b from-red-500 to-black rounded-lg p-6 shadow-lg"
-            >
+          <Card
+            cover={
               <img
-                src={industry.image}
-                alt={industry.title}
-                className="w-full h-96 object-cover rounded-lg"
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-cover"
               />
-              <div className="mt-4 bg-gray-700 hover:bg-red-500 transition-all text-white py-2 rounded-lg font-semibold">
-                {industry.title}
+            }
+            className="border-0"
+          >
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-lg font-bold text-gray-800">
+                {project.title}
+              </h2>
+              <Tooltip title={`${project.category} Project`}>
+                <FaReact className="text-blue-500 text-xl" />
+              </Tooltip>
+            </div>
+
+            <p className="text-gray-600 mb-2">{project.description}</p>
+
+            <div className="mb-4">
+              <span className="text-sm font-medium text-gray-700">Category: </span>
+              <Tag color="blue">{project.category}</Tag>
+            </div>
+
+            <div>
+              <span className="text-sm font-medium text-gray-700">
+                Languages:
+              </span>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {project.language.map((lang, i) => (
+                  <Tag key={i} color="green">
+                    {lang}
+                  </Tag>
+                ))}
               </div>
             </div>
-          ))}
-        </Carousel>
-      </div>
-
-      <div className="flex justify-center items-center mt-6 gap-4">
-        <button onClick={handlePrev} className="text-red-500 text-2xl">
-          <LeftOutlined />
-        </button>
-        <button onClick={handleNext} className="text-red-500 text-2xl">
-          <RightOutlined />
-        </button>
-      </div>
+          </Card>
+        </div>
+      ))}
     </div>
   );
 };
 
-export default MobileApp;
+export default ProjectCard;

@@ -81,31 +81,6 @@ const AboutCompany = () => {
           great lasting relationships.
         </p>
       </div>
-      {/* <div className="flex flex-wrap gap-7 justify-center my-7">
-        <div className="flex">
-          <span>+</span>
-          <h1 className="text-5xl text-yellow-800">05</h1>
-          <h4>
-            Years <br /> Experience
-          </h4>
-        </div>
-        <div className="flex">
-          <span>+</span>
-          <h1 className="text-5xl text-yellow-800">04</h1>
-          <h4>
-            Creative <br />
-            Team
-          </h4>
-        </div>
-        <div className="flex">
-          <span>+</span>
-          <h1 className="text-5xl text-yellow-800">50</h1>
-          <h4>
-            Project <br />
-            Complete
-          </h4>
-        </div>
-      </div> */}
       <div className="flex flex-wrap justify-center gap-6 cursor-pointer p-6">
         {metrics.map((metric) => (
           <div

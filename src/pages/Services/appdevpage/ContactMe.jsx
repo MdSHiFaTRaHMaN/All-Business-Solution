@@ -6,7 +6,7 @@ const ContactMe = () => {
   return (
     <div className="w-full max-w-[1280px] mx-auto px-4 py-12">
       <div
-        className="w-full bg-center bg-cover h-[40rem] sm:h-[35rem] lg:h-[32rem] rounded-lg flex items-center justify-center"
+        className="w-full bg-center bg-cover h-[30rem] sm:h-[35rem] lg:h-[32rem] rounded-lg flex items-center justify-center"
         style={{ backgroundImage: `url(${Background})` }}
       >
         <div className="flex flex-col lg:flex-row items-center justify-between w-full h-full bg-gray-900/60 rounded-lg p-8 sm:p-12 lg:p-16">
