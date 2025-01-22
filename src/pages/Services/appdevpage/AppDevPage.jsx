@@ -1,4 +1,5 @@
 import AboutUs from "./AboutUs";
+import ContactMe from "./ContactMe";
 import FAQSection from "./FAQSection";
 import Header from "./Header";
 import MobileApp from "./MobileApp";
@@ -11,6 +12,7 @@ const AppDevPage = () => {
             <AboutUs />
             <MobileApp />
             <Portfolio />
+            <ContactMe />
             <FAQSection />
         </div>
     );

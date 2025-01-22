@@ -123,7 +123,7 @@ const ContactUs = () => {
             </div>
             <div className="flex items-center space-x-4">
               <HomeOutlined className="text-xl" />
-              <span>255 Kingston AveBrooklyn NY 11213</span>
+              <span >255 Kingston AveBrooklyn NY 11213</span>
             </div>
           </div>
 

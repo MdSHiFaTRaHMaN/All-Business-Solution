@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
 
         {/* Social Media Icons */}
-        <div className="flex justify-center sm:justify-end mt-6 sm:mt-0 gap-4 text-lg">
+        <div className="flex justify-center text-center sm:justify-end mt-6 sm:mt-0 gap-4 text-lg">
           <a className="text-gray-200 hover:text-blue-600">
             <AiFillGithub className="w-6 h-6" />
           </a>
