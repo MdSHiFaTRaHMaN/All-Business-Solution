@@ -6,7 +6,7 @@ const OfficeAddress = () => {
           <div className="p-4 lg:w-1/3">
             <div className="h-full bg-gray-200 bg-opacity-75 p-8 rounded-lg overflow-hidden text-center relative">
               <h1 className="title-font sm:text-3xl text-xl font-semibold text-red-600 mb-3">
-                New York, NY 12004, USA
+                New York, USA
               </h1>
               <h3 className="font-semibold text-red-700 text-2xl">
                 (Headquater)
@@ -19,7 +19,7 @@ const OfficeAddress = () => {
           <div className="p-4 lg:w-1/3">
             <div className="h-full bg-gray-200 bg-opacity-75 p-8 rounded-lg overflow-hidden text-center relative">
               <h1 className="title-font sm:text-3xl text-xl font-semibold text-red-600 mb-3">
-                New York, NY 12004, USA
+                New York, USA
               </h1>
               <p className="leading-relaxed mb-3">
                 255 Kingston AveBrooklyn New York, NY 12004, USA
@@ -29,10 +29,11 @@ const OfficeAddress = () => {
           <div className="p-4 lg:w-1/3">
             <div className="h-full bg-gray-200 bg-opacity-75 p-8 rounded-lg overflow-hidden text-center relative">
               <h1 className="title-font sm:text-3xl text-xl font-semibold text-red-600 mb-3">
-                New York, NY 12004, USA
+                Dhaka Bangladesh
               </h1>
               <p className="leading-relaxed mb-3">
-                255 Kingston AveBrooklyn New York, NY 12004, USA
+                Block A, Road 14, House No #9, Green Model Town, Mugda, Motheej,
+                Dhaka
               </p>
             </div>
           </div>

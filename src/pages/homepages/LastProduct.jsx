@@ -112,11 +112,7 @@ const LastProduct = () => {
                 <li key={idx} className="border-b pb-1">{feature}</li>
               ))}
             </ul>
-            {/* <div className="text-center">
-              <button className="px-4 py-2 border border-gray-800 text-gray-800 font-semibold rounded hover:bg-gray-800 hover:text-white transition">
-                View Details
-              </button>
-            </div> */}
+
           </div>
         ))}
       </Carousel>

@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "antd/dist/reset.css";
 import CrmProject from "../../assets/cmr project.png";
-import RealState from "../../assets/Real state.png";
+import RealState from "../../assets/realstate project.png";
 import WingsBlast from "../../assets/wingsblast project.png";
 import eCommarce from "../../assets/eCommarce Project.png";
 import Hospital from "../../assets/hospital project.png";
