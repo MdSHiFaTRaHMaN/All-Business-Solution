@@ -18,33 +18,33 @@ const LastProduct = () => {
       title: "CurGuru",
       description: "We know all your online business problems and how to solve them",
       features: [
-        "Order management",
-        "Stock management",
-        "Employee management",
-        "Courier management",
-        "Accounts problem",
-        "Supplier problem",
+        "Order Management",
+        "Stock Management",
+        "Employee Management",
+        "Courier Management",
+        "Accounts Problem",
+        "Supplier Problem",
       ],
     },
     {
       title: "All Business Solution",
       description: "Manage your student-teacher online classes and accounts from one software",
       features: [
-        "Student management",
-        "Teacher management",
-        "Course management",
-        "Class management",
-        "Order management",
-        "Subscription management",
+        "Student Management",
+        "Teacher Management",
+        "Course Management",
+        "Class Management",
+        "Order Management",
+        "Subscription Management",
       ],
     },
     {
       title: "Commandes pro Admin",
-      description: "Manage your customer Order",
+      description: "Manage your customer orders",
       features: [
         "User Module",
         "Management Module",
-        "IP management Module",
+        "IP Management Module",
         "Corporate User Module",
         "Network Module",
         "CRM Module",
@@ -52,17 +52,18 @@ const LastProduct = () => {
     },
     {
       title: "Wings Blast",
-      description: "eCommarce Websites",
+      description: "E-commerce Websites",
       features: [
         "User Management",
         "Product Management",
         "Order Management",
         "Payment Management",
-        "Auto Complate Location",
-        "Admin Managment",
+        "Auto Complete Location",
+        "Admin Management",
       ],
     },
   ];
+  
 
   const responsive = {
     desktop: {
@@ -111,11 +112,11 @@ const LastProduct = () => {
                 <li key={idx} className="border-b pb-1">{feature}</li>
               ))}
             </ul>
-            <div className="text-center">
+            {/* <div className="text-center">
               <button className="px-4 py-2 border border-gray-800 text-gray-800 font-semibold rounded hover:bg-gray-800 hover:text-white transition">
                 View Details
               </button>
-            </div>
+            </div> */}
           </div>
         ))}
       </Carousel>

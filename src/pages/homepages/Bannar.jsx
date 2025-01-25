@@ -2,13 +2,12 @@ import { Button, Carousel } from "antd";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
-import Bannar1 from "../../assets/bannarimage001.jpg";
-import Bannar2 from "../../assets/bannarimage01.jpg";
-import Bannar3 from "../../assets/bannarimage6.jpg";
-import Bannar4 from "../../assets/bannarimage05.jpg";
-import Bannar5 from "../../assets/bannarimage1.jpg";
-import Bannar6 from "../../assets/bannarimage3.jpg";
-import Bannar7 from "../../assets/bannarimage2.jpg";
+import Bannar1 from "../../assets/homebannar1.jpeg";
+import Bannar2 from "../../assets/homebannar2.jpeg";
+import Bannar3 from "../../assets/homebannar3.jpeg";
+import Bannar4 from "../../assets/homebannar4.jpeg";
+import Bannar5 from "../../assets/homebannar6.jpeg";
+import Bannar6 from "../../assets/homebannar5.jpeg";
 import { Link } from "react-router-dom";
 
 const Bannar = () => {
@@ -23,51 +22,44 @@ const Bannar = () => {
   const slides = [
     {
       image: Bannar1,
-      title: "Small Business Account Software",
+      title: "Innovative App Development for Every Platform",
       description:
-        "E office Management System Provide Expert Accounting Software",
+        "We craft user-friendly and feature-rich mobile apps tailored to your needs, ensuring top-notch performance across all devices.",
       link: "/appdev-services",
     },
     {
       image: Bannar2,
-      title: "Small Business Website Design",
+      title: "Professional Web Development Services",
       description:
-        "To all Small Business, We Provide Website Design & Development Service",
+        "Build responsive, secure, and dynamic websites that captivate users and elevate your brand.",
       link: "/webdev-service",
     },
     {
       image: Bannar3,
-      title: "Web Development Agency",
+      title: "Stunning UI/UX Design for Maximum Impact",
       description:
-        "Develop your web Application with Best Web Development Agency\nE office Management System",
-      link: "/webdev-service", 
+        "Deliver engaging user experiences with sleek, intuitive, and modern designs that leave a lasting impression.",
+      link: "/ui-ux-services",
     },
     {
       image: Bannar4,
-      title: "Customer eCommerce Website Development",
+      title: "Boost Sales with Powerful eCommerce Solutions",
       description:
-        "E office Management System Provide Best eCommerce Website Design Service",
+        "Launch your online store with advanced features, seamless navigation, and secure payment integration.",
       link: "/eCommerce-service",
     },
     {
       image: Bannar5,
-      title: "Digital Marketing Support",
+      title: "Results-Driven Digital Marketing Strategies",
       description:
-        "We will do Marketing & Remarketing with Paid and Free Tools",
+        "Expand your reach and grow your audience with targeted campaigns, social media, and content marketing",
       link: "/marketing-services",
     },
     {
       image: Bannar6,
-      title: "UI/UX Design",
+      title: "Top-Notch SEO to Rank Higher",
       description:
-        "Manage Your Website & App Design, Management From One Software",
-      link: "/ui-ux-services",
-    },
-    {
-      image: Bannar7,
-      title: "SCO Optimization",
-      description:
-        "SEO services | Your key to sustainable online success",
+        "Improve your website’s visibility on search engines and drive organic traffic with proven SEO techniques.",
       link: "/seo-services",
     },
   ];
@@ -109,51 +101,50 @@ const Bannar = () => {
             </header>
           ))}
         </Carousel> */}
-            <Carousel autoplay effect="fade" dots arrows>
-      {slides.map((slide, index) => (
-        <header key={index}>
-          <div
-            className="w-full bg-center bg-cover h-screen relative"
-            style={{
-              backgroundImage: `url(${slide.image})`,
-            }}
-          >
-            <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-              {/* AOS অ্যানিমেশন */}
+        <Carousel autoplay autoplaySpeed={2000} effect="fade" dots arrows>
+          {slides.map((slide, index) => (
+            <header key={index}>
               <div
-                data-aos="fade-up" // প্রতিটি স্লাইডে ফেড-আপ অ্যানিমেশন
-                className="text-center px-4 md:px-10 lg:px-28"
+                className="w-full bg-center bg-cover h-screen relative"
+                style={{
+                  backgroundImage: `url(${slide.image})`,
+                }}
               >
-                <h1
-                  className="text-2xl sm:text-3xl md:text-5xl font-bold text-white font-mono leading-tight"
-                  data-aos="fade-down" // হেডারে ফেড-ডাউন অ্যানিমেশন
-                  data-aos-delay="200"
-                >
-                  {slide.title}
-                </h1>
-                <p
-                  className="text-white text-sm sm:text-base md:text-lg font-medium mt-4"
-                  data-aos="fade-up" // প্যারাগ্রাফে ফেড-আপ অ্যানিমেশন
-                  data-aos-delay="400"
-                >
-                  {slide.description}
-                </p>
-                <Link to={slide.link}>
-                  <Button
-                    variant="outlined"
-                    className="font-semibold text-lg text-white p-6 bg-transparent"
-                    data-aos="zoom-in" // বাটনে জুম ইন অ্যানিমেশন
-                    data-aos-delay="600"
+                <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                  <div
+                    data-aos="fade-up" 
+                    className="text-center px-4 md:px-10 lg:px-28"
                   >
-                    CHECKOUT NOW
-                  </Button>
-                </Link>
+                    <h1
+                      className="text-2xl sm:text-3xl md:text-5xl font-bold text-white font-mono leading-tight"
+                      data-aos="fade-down" 
+                      data-aos-delay="200"
+                    >
+                      {slide.title}
+                    </h1>
+                    <p
+                      className="text-white text-sm sm:text-base md:text-lg font-medium mt-4"
+                      data-aos="fade-up" 
+                      data-aos-delay="400"
+                    >
+                      {slide.description}
+                    </p>
+                    <Link to={slide.link}>
+                      <Button
+                        variant="outlined"
+                        className="font-semibold text-lg text-white p-6 bg-transparent"
+                        data-aos="zoom-in" 
+                        data-aos-delay="600"
+                      >
+                        CHECKOUT NOW
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </header>
-      ))}
-    </Carousel>
+            </header>
+          ))}
+        </Carousel>
       </div>
     </div>
   );

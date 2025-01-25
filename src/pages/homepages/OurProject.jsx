@@ -2,55 +2,66 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Button, Card, Tag, Tooltip } from "antd";
-import { FaLaptopCode, FaReact } from "react-icons/fa";
-import WB from "../../assets/projectimage.jpg";
+import { FaReact } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Projact1 from "../../assets/wingsblast project.png";
+import Project2 from "../../assets/eCommarce Project.png";
+import Project3 from "../../assets/Real state.png";
+import Project4 from "../../assets/hospital project.png";
+import Project5 from "../../assets/travel project.png";
+import Project6 from "../../assets/wacthshop project.png";
 
 const projects = [
   {
-    title: "Wings Blast",
-    description: "eCommerce platform providing seamless shopping experience.",
-    image: WB,
+    title: "Food Order Management",
+    description:
+      "Discover a world of flavors at Wings Blast, your ultimate destination for mouthwatering recipes, restaurant recommendations, and food inspiration.",
+    image: Projact1,
     aosEffect: "fade-up",
     category: "eCommerce",
     language: ["React JS", "Tailwind CSS", "Node JS", "MySQL"],
   },
   {
-    title: "Lamyakun",
-    description: "A modern website built for educational institutions.",
-    image: WB,
+    title: "Grocery Online Store",
+    description:
+      "Discover a world of flavors at Grocery Store, your ultimate destination for mouthwatering recipes, restaurant recommendations, and food inspiration.",
+    image: Project2,
     aosEffect: "fade-up",
     category: "Web Development",
     language: ["React JS", "Tailwind CSS", "Node JS", "MySQL"],
   },
   {
-    title: "Custom Software",
-    description: "Tailored software solutions for business growth.",
-    image: WB,
+    title: "Real State Project",
+    description:
+      "PrestigeLabs includes an automated tax submission system, freeing up your time to focus on growing your business.",
+    image: Project3,
     aosEffect: "fade-up",
     category: "Software Development",
+    language: ["Dart(OP)", "Flatter", "Rest API", "MySQL"],
+  },
+  {
+    title: "Hospital & Clinic Management and Appointment System",
+    description:
+      "Discover a world of flavors at Wings Blast, your ultimate destination for mouthwatering recipes, restaurant recommendations, and food inspiration.",
+    image: Project4,
+    aosEffect: "fade-up",
+    category: "eCommerce",
     language: ["React JS", "Tailwind CSS", "Node JS", "MySQL"],
   },
   {
-    title: "TechVerse",
-    description: "A community-driven technology blog.",
-    image: WB,
-    aosEffect: "fade-up",
-    category: "Blog Development",
-    language: ["Next.js", "Chakra UI", "TypeScript"],
-  },
-  {
-    title: "FitLife",
-    description: "A fitness tracking app for healthier living.",
-    image: WB,
+    title: "Travel Booking Website",
+    description:
+      "Embark on unforgettable adventures with Travel, your ultimate guide to exploring the world. Whether you're planning a weekend getaway or a dream vacation.",
+    image: Project5,
     aosEffect: "fade-up",
     category: "Health & Fitness",
     language: ["React Native", "Expo", "MongoDB"],
   },
   {
-    title: "Portfolio Pro",
-    description: "An elegant portfolio website for creative professionals.",
-    image: WB,
+    title: "eCommerce Website",
+    description:
+      "Welcome to Luxury Watches, where sophistication meets precision. We curate an exclusive collection of luxury timepieces crafted by the world’s most esteemed watchmakers.",
+    image: Project6,
     aosEffect: "zoom-in",
     category: "Portfolio",
     language: ["React JS", "Framer Motion", "SASS"],
@@ -96,7 +107,7 @@ const OurProject = () => {
           Explore some of our amazing projects tailored to your business needs.
         </p>
         {/* Category Filter */}
-        <div
+        {/* <div
           data-aos="fade-up"
           className="flex justify-center mt-6 space-x-3 overflow-x-auto scrollbar-hide"
         >
@@ -104,11 +115,7 @@ const OurProject = () => {
             "All",
             "Web Development",
             "eCommerce",
-            "Mobile App",
             "Software Development",
-            "Blog Development",
-            "Health & Fitness",
-            "Portfolio",
           ].map((category, idx) => (
             <button
               key={idx}
@@ -122,7 +129,7 @@ const OurProject = () => {
               {category}
             </button>
           ))}
-        </div>
+        </div> */}
       </div>
 
       {/* Projects Grid */}
@@ -181,13 +188,12 @@ const OurProject = () => {
       {/* See More Button */}
       <div className="flex justify-center mt-12" data-aos="fade-up">
         <Link to="/portfolio">
-          <Button
-            type="primary"
-            size="large"
-            className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-medium shadow-md transition-transform transform hover:scale-105"
-          >
-            SEE MORE
-          </Button>
+          <button className="btn relative inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-indigo-100 rounded hover:bg-white group py-3 px-5">
+            <span className="w-56 h-48 rounded bg-black absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+            <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
+              SEE MORE
+            </span>
+          </button>
         </Link>
       </div>
     </section>

@@ -18,6 +18,7 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
+import OfficeAddress from "../components/OfficeAddress";
 
 const Main = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -82,6 +83,7 @@ const Main = () => {
           <Navbar />
           <Outlet />
           <ContactUs />
+          <OfficeAddress />
           <Footer />
         </div>
       )}
