@@ -6,7 +6,7 @@ import { FaReact } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Projact1 from "../../assets/wingsblast project.png";
 import Project2 from "../../assets/eCommarce Project.png";
-import Project3 from "../../assets/Real state.png";
+import Project3 from "../../assets/real state.png";
 import Project4 from "../../assets/hospital project.png";
 import Project5 from "../../assets/travel project.png";
 import Project6 from "../../assets/wacthshop project.png";

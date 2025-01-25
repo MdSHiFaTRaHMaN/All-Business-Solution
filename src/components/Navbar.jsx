@@ -54,7 +54,7 @@ const Navbar = () => {
         </Menu.SubMenu>
         {/* Industries menu */}
 
-        <Menu.SubMenu
+        {/* <Menu.SubMenu
           key="Industries"
           title="Industries"
           className="hover:text-blue-600  grid grid-cols-2 gap-4"
@@ -85,7 +85,7 @@ const Navbar = () => {
               <Link to="/">Automobile</Link>
             </Menu.Item>
           </div>
-        </Menu.SubMenu>
+        </Menu.SubMenu> */}
 
         <Menu.Item key="portfolio" className="hover:text-blue-600">
           <Link to="/portfolio">Portfolio</Link>
