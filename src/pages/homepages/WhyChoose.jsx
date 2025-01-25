@@ -24,7 +24,7 @@ const WhyChoose = () => {
           <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
         </div>
       </div>
-      <div className="flex flex-wrap gap-7 items-center">
+      <div className="grid lg:grid-cols-2 lg:grid-cols-3 gap-3 items-center">
         <div>
           <div
             className="mb-7 group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10"

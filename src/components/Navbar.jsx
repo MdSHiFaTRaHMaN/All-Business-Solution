@@ -27,6 +27,7 @@ const Navbar = () => {
         <Menu.Item key="home" className="hover:text-blue-600">
           <Link to="/">Home</Link>
         </Menu.Item>
+        {/* services menu  */}
         <Menu.SubMenu
           key="services"
           title="Services+"
@@ -50,6 +51,40 @@ const Navbar = () => {
           <Menu.Item key="sco">
             <Link to="/seo-services">SEO Optimization</Link>
           </Menu.Item>
+        </Menu.SubMenu>
+        {/* Industries menu */}
+
+        <Menu.SubMenu
+          key="Industries"
+          title="Industries"
+          className="hover:text-blue-600  grid grid-cols-2 gap-4"
+        >
+          <div className="grid grid-cols-2 gap-4 p-3">
+            <Menu.Item key="Sports" className="bg-gray-200">
+              <Link to="/">Sports</Link>
+            </Menu.Item>
+            <Menu.Item key="Travel" className="bg-gray-200">
+              <Link to="/">Travel</Link>
+            </Menu.Item>
+            <Menu.Item key="education" className="bg-gray-200">
+              <Link to="/">Education</Link>
+            </Menu.Item>
+            <Menu.Item key="E-commerce" className="bg-gray-200">
+              <Link to="/">E-commerce</Link>
+            </Menu.Item>
+            <Menu.Item key="Health" className="bg-gray-200">
+              <Link to="/">Health</Link>
+            </Menu.Item>
+            <Menu.Item key="music" className="bg-gray-200">
+              <Link to="/">Music</Link>
+            </Menu.Item>
+            <Menu.Item key="food-delivery" className="bg-gray-200">
+              <Link to="/">Food Delivery</Link>
+            </Menu.Item>
+            <Menu.Item key="automobile" className="bg-gray-200">
+              <Link to="/">Automobile</Link>
+            </Menu.Item>
+          </div>
         </Menu.SubMenu>
 
         <Menu.Item key="portfolio" className="hover:text-blue-600">
@@ -95,7 +130,9 @@ const Navbar = () => {
                 width={60}
                 className="rounded-full"
               />
-              <span className="font-semibold font-mono">ALL BUSINESS SOLUTION</span>
+              <span className="font-semibold font-mono">
+                ALL BUSINESS SOLUTION
+              </span>
             </Link>
             <Button
               type="text"
