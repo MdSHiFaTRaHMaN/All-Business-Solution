@@ -72,9 +72,9 @@ const AboutCompany = () => {
         <span className="text-sm text-yellow-700">KNOW US BETTER</span>
         <h1 className="text-3xl font-semibold">About Us</h1>
       </div>
-      <div className="grid lg:flex justify-between gap-7">
-        <div className="mt-7">
-          <p className="my-6 leading-relaxed">
+      <div className="grid lg:flex justify-between gap-7 mt-10">
+        <div className="">
+          <p className=" leading-relaxed">
             We are ABS. We put our skilled resources with the supervision of
             ardit leader to ensure that you get your desirable service(s). Thus,
             we offer a comprehensive range of managed ICT enabled services.
@@ -104,7 +104,7 @@ const AboutCompany = () => {
             and build great lasting relationships.
           </p>
         </div>
-        <img src={AboutImg} alt="about-image" width={480} />
+        <img src={AboutImg} alt="about-image" width={480} className="h-[300px] lg:h-[450px]" />
       </div>
     </div>
   );

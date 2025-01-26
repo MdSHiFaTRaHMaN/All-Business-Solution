@@ -33,14 +33,14 @@ const Navbar = () => {
           title="Services+"
           className="hover:text-blue-600 custom-submenu grid grid-cols-2"
         >
-          <Menu.Item key="ecommerce">
-            <Link to="/eCommerce-service">E-Commerce Solutions</Link>
-          </Menu.Item>
-          <Menu.Item key="web">
-            <Link to="/webdev-service">Web Development Company</Link>
-          </Menu.Item>
           <Menu.Item key="mobile">
             <Link to="/appdev-services">App Development</Link>
+          </Menu.Item>
+          <Menu.Item key="web">
+            <Link to="/webdev-service">Web Development </Link>
+          </Menu.Item>
+          <Menu.Item key="ecommerce">
+            <Link to="/eCommerce-service">E-Commerce Solutions</Link>
           </Menu.Item>
           <Menu.Item key="marketing">
             <Link to="/marketing-services">Digital marketing</Link>
@@ -167,24 +167,6 @@ const Navbar = () => {
             popupClassName="mobile-submenu"
             className=""
           >
-            <Menu.Item key="ecommerce">
-              <Link
-                to="/eCommerce-service"
-                onClick={closeDrawer}
-                className="hover:text-blue-500"
-              >
-                E-Commerce Solutions
-              </Link>
-            </Menu.Item>
-            <Menu.Item key="web">
-              <Link
-                to="/webdev-service"
-                onClick={closeDrawer}
-                className="hover:text-blue-500"
-              >
-                Web Development Company
-              </Link>
-            </Menu.Item>
             <Menu.Item key="mobile">
               <Link
                 to="/appdev-services"
@@ -194,6 +176,25 @@ const Navbar = () => {
                 App Development
               </Link>
             </Menu.Item>
+            <Menu.Item key="web">
+              <Link
+                to="/webdev-service"
+                onClick={closeDrawer}
+                className="hover:text-blue-500"
+              >
+                Web Development
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="ecommerce">
+              <Link
+                to="/eCommerce-service"
+                onClick={closeDrawer}
+                className="hover:text-blue-500"
+              >
+                E-Commerce Solutions
+              </Link>
+            </Menu.Item>
+
             <Menu.Item key="marketing">
               <Link
                 to="/marketing-services"

@@ -5,12 +5,16 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import MobilePhone from "../../../assets/mobilephone.png";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
+import AppProject1 from "../../../assets/appproject1.png"
+import AppProject2 from "../../../assets/appproject2.png"
+import AppProject3 from "../../../assets/appproject333.png"
+import AppProject4 from "../../../assets/appproject44.png"
 
 const industries = [
-  { title: "Resturent", image: MobilePhone },
-  { title: "Automobile", image: MobilePhone },
-  { title: "Business", image: MobilePhone },
-  { title: "Fintech", image: MobilePhone },
+  { title: "Resturent", image: AppProject1 },
+  { title: "Automobile", image: AppProject2 },
+  { title: "Business", image: AppProject3 },
+  { title: "Travel", image: AppProject4 },
   { title: "Car GuRu", image: MobilePhone },
 ];
 

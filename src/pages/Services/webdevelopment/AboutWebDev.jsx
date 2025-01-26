@@ -1,7 +1,6 @@
 import { FaCode, FaGlobe, FaLaptopCode } from "react-icons/fa";
 import WebIMG from "../../../assets/webdevbannar.png";
 import WorkingProcess from "../../../assets/WorkingProcessweb.png";
-import MyExprience from "./MyExprience";
 
 const AboutWebDev = () => {
   const metrics = [
@@ -121,7 +120,6 @@ const AboutWebDev = () => {
         <p className="text-gray-700 mb-4">
           So, here is the list of which we're positively skilled in:
         </p>
-        <MyExprience />
       </div>
 
       {/* Digital Marketing Expertise */}

@@ -1,10 +1,10 @@
-
 import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
-import WebsiteIMG1 from "../../../assets/course2.jpg";
-import WebsiteIMG2 from "../../../assets/course3.jpg";
-import WebsiteIMG3 from "../../../assets/course6.jpg";
+import WebsiteIMG1 from "../../../assets/eCommarce Project.png";
+import WebsiteIMG2 from "../../../assets/wacthshop project.png";
+import WebsiteIMG3 from "../../../assets/wingsblast project.png";
+import { Link } from "react-router-dom";
 
 const WebDevProject = () => {
   useEffect(() => {
@@ -13,19 +13,25 @@ const WebDevProject = () => {
 
   const portfolioItems = [
     {
-      image: WebsiteIMG1, // Replace with your image URL
-      title: "Ecommerce Website Design",
-      description: "Perfectly responsive on all devices",
+      id: 1,
+      title: "Grocery Online Store",
+      description: "Discover a world of flavors at Online Store",
+      image: WebsiteIMG1,
+      category: "WEB & APP",
     },
     {
-      image: WebsiteIMG2, // Replace with your image URL
-      title: "Nusuki Ecommerce Website",
-      description: "Perfectly responsive on all devices",
+      id: 13,
+      title: "Luxury Watches",
+      description: "Welcome to Luxury Watches.",
+      image: WebsiteIMG2,
+      category: "WEB",
     },
     {
-      image: WebsiteIMG3, // Replace with your image URL
-      title: "Ecommerce Website Design",
-      description: "Perfectly responsive on all devices",
+      id: 3,
+      title: "Food Order Management",
+      description: "Discover a world of flavors at Wings Blast.",
+      image: WebsiteIMG3,
+      category: "WEB & APP",
     },
   ];
 
@@ -52,7 +58,7 @@ const WebDevProject = () => {
           <div
             key={index}
             data-aos="zoom-in"
-            className="bg-white rounded-xl shadow-lg overflow-hidden w-80"
+            className="bg-gray-100 rounded-xl shadow-lg overflow-hidden w-80"
           >
             <img
               src={item.image}
@@ -68,6 +74,14 @@ const WebDevProject = () => {
           </div>
         ))}
       </div>
+      <Link to="/portfolio" className="flex justify-center my-7 ">
+        <button className="btn relative inline-flex items-center overflow-hidden font-medium transition-all bg-indigo-100 rounded hover:bg-white group py-3 px-5">
+          <span className="w-56 h-48 rounded bg-gray-800 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+          <span className="relative w-full text-left text-gray-800 transition-colors duration-300 ease-in-out group-hover:text-white">
+            SEE MORE
+          </span>
+        </button>
+      </Link>
     </div>
   );
 };
