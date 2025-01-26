@@ -128,7 +128,7 @@ const ContactUs = () => {
           </div>
 
           {/* Social Media Icons */}
-          <div className="flex mt-6 sm:mt-0 gap-4 text-lg">
+          {/* <div className="flex mt-6 sm:mt-0 gap-4 text-lg">
             <a className="text-gray-200 hover:text-blue-600">
               <AiFillGithub className="w-6 h-6" />
             </a>
@@ -141,7 +141,7 @@ const ContactUs = () => {
             <a className="text-gray-200 hover:text-green-600">
               <TbBrandFiverr className="w-6 h-6" />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

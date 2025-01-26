@@ -93,9 +93,9 @@ const Navbar = () => {
         <Menu.Item key="aboutus" className="hover:text-blue-600">
           <Link to="/about-us">About Us</Link>
         </Menu.Item>
-        <Menu.Item key="article" className="hover:text-blue-600">
+        {/* <Menu.Item key="article" className="hover:text-blue-600">
           <Link to="/article">Article</Link>
-        </Menu.Item>
+        </Menu.Item> */}
       </Menu>
 
       {/* Desktop Contact Button */}
@@ -240,7 +240,7 @@ const Navbar = () => {
               About Us
             </Link>
           </Menu.Item>
-          <Menu.Item key="article-mobile">
+          {/* <Menu.Item key="article-mobile">
             <Link
               to="/article"
               onClick={closeDrawer}
@@ -248,7 +248,7 @@ const Navbar = () => {
             >
               Article
             </Link>
-          </Menu.Item>
+          </Menu.Item> */}
           <Menu.Item key="contact-mobile">
             <Link
               to="/contact"

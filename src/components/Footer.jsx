@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
 
         {/* Social Media Icons */}
-        <div className="flex justify-center text-center sm:justify-end mt-6 sm:mt-0 gap-4 text-lg">
+        {/* <div className="flex justify-center text-center sm:justify-end mt-6 sm:mt-0 gap-4 text-lg">
           <a className="text-gray-200 hover:text-blue-600">
             <AiFillGithub className="w-6 h-6" />
           </a>
@@ -69,7 +69,7 @@ const Footer = () => {
           <a className="text-gray-200 hover:text-green-600">
             <TbBrandFiverr className="w-6 h-6" />
           </a>
-        </div>
+        </div> */}
       </div>
 
       {/* Footer Bottom */}
@@ -77,12 +77,11 @@ const Footer = () => {
         <p className="text-sm text-gray-300">
           ©2025 ALL Business Solution —
           <a
-            href="https://www.facebook.com/md.shifat.rahman420"
             className="text-gray-200 ml-1"
             rel="noopener noreferrer"
             target="_blank"
           >
-            @designer All One Autos Team
+            @designer ALL Business Solution Team
           </a>
         </p>
       </div>

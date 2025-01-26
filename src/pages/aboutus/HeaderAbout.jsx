@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import AboutUs from "../../assets/about-us.jpg";
+import AboutUs from "../../assets/aboutus.jpeg";
 
 const HeaderAbout = () => {
   return (
     <div>
       <div
-        className="w-full bg-center bg-cover h-[38rem]"
+        className=" bg-center bg-cover w-full h-[50vh] lg:h-[50vh]"
         style={{
           backgroundImage: `url(${AboutUs})`,
         }}

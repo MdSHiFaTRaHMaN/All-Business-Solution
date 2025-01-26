@@ -4,11 +4,12 @@ import { FaRegSmile } from "react-icons/fa"; // React Icons
 import AOS from "aos";
 import "aos/dist/aos.css"; // AOS Animation CSS
 import Company from "../../assets/Admin Logo.png";
-import AOA from "../../assets/alloneautos.jpg"
-import Hangest from "../../assets/Hangest.jpg"
-import Commando from "../../assets/Commando.png"
-import WingsBlast from "../../assets/wingblastCony.jpeg"
-import CarGuru from "../../assets/Carguru.png"
+import AOA from "../../assets/alloneautos.jpg";
+import Hangest from "../../assets/Hangest.jpg";
+import Commando from "../../assets/Commando.png";
+import WingsBlast from "../../assets/wingblastCony.jpeg";
+import CarGuru from "../../assets/Carguru.png";
+import { Link } from "react-router-dom";
 
 const clients = [
   { id: 1, name: "All One Autos", image: AOA },
@@ -21,21 +22,18 @@ const clients = [
 
 const OurClient = () => {
   useEffect(() => {
-      AOS.init({
-        duration: 1000,
-        easing: "ease-in-out", 
-        once: false, 
-      });
-    }, []);
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false,
+    });
+  }, []);
 
   return (
     <div className="py-16 px-4 md:px-8 bg-white grid lg:flex">
       {/* Heading Section */}
       <div className="text-center mb-12 w-full lg:w-2/5">
-        <div
-          className="flex items-center gap-2 mb-2"
-          data-aos="fade-up"
-        >
+        <div className="flex items-center gap-2 mb-2" data-aos="fade-up">
           <span className="h-[1px] w-[80px] bg-yellow-600 te"></span>
           <FaRegSmile className="text-yellow-600 text-2xl mr-2" />
           <span className="text-sm text-yellow-600">OUR CLIENTS</span>
@@ -48,9 +46,15 @@ const OurClient = () => {
         </h2>
         {/* Button Section */}
         <div className="text-start mt-4" data-aos="fade-up">
-        <Button color="primary" variant="outlined" className="font-semibold text-lg p-6">
-            SEE ALL
-          </Button>
+          <Link to="/portfolio">
+            <Button
+              color="primary"
+              variant="outlined"
+              className="font-semibold text-lg p-6"
+            >
+              SEE ALL
+            </Button>
+          </Link>
         </div>
       </div>
 
@@ -70,7 +74,9 @@ const OurClient = () => {
               alt={client.name}
               className="w-28 h-28 object-contain rounded border border-gray-200 p-1"
             />
-            <p className="text-base text-gray-700 font-semibold">{client.name}</p>
+            <p className="text-base text-gray-700 font-semibold">
+              {client.name}
+            </p>
           </div>
         ))}
       </div>

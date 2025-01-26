@@ -4,7 +4,7 @@ import CreativeWork from "./CreativeWork";
 import HeaderAbout from "./HeaderAbout";
 import OurMission from "./OurMission";
 import OurTeam from "./OurTeam";
-import Testimonial from "./Testimonial";
+// import Testimonial from "./Testimonial";
 
 const AboutPage = () => {
   return (
@@ -13,7 +13,7 @@ const AboutPage = () => {
       <AboutCompany />
       <AboutBannar />
       <CreativeWork />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <OurTeam />
       <OurMission />
     </div>

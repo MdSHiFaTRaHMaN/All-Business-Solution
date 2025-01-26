@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Bannar from "../../assets/portfoliobannarr.jpg";
+import Bannar from "../../assets/Portfolioimage.jpeg";
 import { Link } from "react-router-dom";
 
 const PortfolioBannar = () => {
@@ -10,7 +10,7 @@ const PortfolioBannar = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[50vh] lg:h-[100vh]">
+    <div className="relative w-full h-[50vh] lg:h-[50vh]">
       <img
         src={Bannar}
         alt="Blog Banner"
