@@ -12,12 +12,12 @@ const ContactMe = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between w-full h-full bg-gray-900/60 rounded-lg p-8 sm:p-12 lg:p-16">
           <div className="lg:w-1/2 w-full text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
-              Let <span className="text-red-600">Appnality Launch</span> Your
+              Let <span className="text-red-600">ABS Launch</span> Your
               Web <br className="hidden sm:block" /> and App Projects!
             </h1>
             <p className="text-white mt-4 text-sm sm:text-base">
               Are you ready to take your business online? Consult your project
-              with us for free! At Appnality, we work closely with our top
+              with us for free! At ABS, we work closely with our top
               expert developers, guiding each step from conception to launch to
               ensure outstanding, high-performance websites for your business.
             </p>

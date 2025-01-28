@@ -22,7 +22,7 @@ const OfficeAddress = () => {
                 New York, USA
               </h1>
               <p className="leading-relaxed mb-3">
-                255 Kingston AveBrooklyn New York, NY 12004, USA
+                301 W Nine mile Rd Pensacola FL 32534
               </p>
             </div>
           </div>

@@ -196,7 +196,7 @@ const PrivacyPolicy = () => {
                 practices, contact us at:
               </p>
               <div className="mt-4">
-                <h3 className="font-semibold">Technobd Limited</h3>
+                <h3 className="font-semibold">All Business Solution(ABS)</h3>
                 <p>Manda, Dhaka in Bangladesh</p>
                 <a href="" className="text-blue-600 hover:underline">allbusinesssolution.com</a>
               </div>

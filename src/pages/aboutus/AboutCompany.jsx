@@ -16,7 +16,7 @@ const AboutCompany = () => {
     },
     {
       id: 2,
-      value: "150+",
+      value: "50+",
       label: "Apps Developed",
       bgColor: "bg-red-500",
       textColor: "text-white",
@@ -44,7 +44,7 @@ const AboutCompany = () => {
     },
     {
       id: 6,
-      value: "175+",
+      value: "30+",
       label: "Employees",
       bgColor: "bg-black",
       textColor: "text-white",

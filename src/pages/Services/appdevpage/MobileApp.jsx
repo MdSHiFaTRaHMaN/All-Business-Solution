@@ -3,19 +3,19 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import MobilePhone from "../../../assets/mobilephone.png";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import AppProject1 from "../../../assets/appproject1.png"
 import AppProject2 from "../../../assets/appproject2.png"
 import AppProject3 from "../../../assets/appproject333.png"
 import AppProject4 from "../../../assets/appproject44.png"
+import AppProject5 from "../../../assets/travel-app-project.png"
 
 const industries = [
-  { title: "Resturent", image: AppProject1 },
+  { title: "Food Delivary", image: AppProject1 },
   { title: "Automobile", image: AppProject2 },
   { title: "Business", image: AppProject3 },
-  { title: "Travel", image: AppProject4 },
-  { title: "Car GuRu", image: MobilePhone },
+  { title: "eCommerce", image: AppProject4 },
+  { title: "Travel", image: AppProject5 },
 ];
 
 const responsive = {
